@@ -1,0 +1,145 @@
+/*
+ Theme Name:   John Manlove Custom Theme
+ Theme URI:    http://www.johnmanlove.com
+ Description:  Custom Theme for John Manlove
+ Author:       Rick Celeita
+ Template:     responsive
+ Version:      1.0.0
+*/
+
+$bgcolor: #fff;
+$text-color: black;
+$red-color: #E64D61;
+
+
+$font-stack: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+$header-text-size: 16px;
+$text-size: 14px;
+
+$no-border: 0 none;
+
+/* ===================================================================================
+GENERAL STYLES
+=================================================================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-stack;
+}
+
+body {
+	background: $bgcolor;
+}
+
+.su-column {
+	margin-right: 0 !important;
+}
+
+/* ===================================================================================
+HEADER STYLES
+=================================================================================== */
+
+#container {
+	max-width: 100%;
+	padding: 0;
+	width: 100%;
+
+	#header {
+		background: $bgcolor;
+		border-bottom: 2px solid #BC2227;
+		padding-top: 20px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+
+		#logo {
+			margin-bottom: 20px;
+			padding: 0 80px;
+		}
+
+		.menu {
+			bottom: 0;
+			position: fixed;
+			width: 100%;
+		}
+
+		#header-contact {
+			float: right;
+			padding-right: 80px;
+
+			h3 {
+				margin: 0;
+				
+				a {
+					color: $text-color;
+					font-size: $header-text-size;
+					font-weight: normal;
+				}
+			}
+
+		}
+		
+	}
+
+}
+
+/* ===================================================================================
+CONTENT STYLES
+=================================================================================== */
+
+#wrapper {
+	border: $no-border;
+	margin-bottom: 0;
+	margin-top: 77px;
+	padding: 0;
+	max-width: 1280px;
+	min-width: 0px;
+
+	#content-full {
+		margin: 0;
+
+		.post-entry {
+
+			.hero-banner-image {
+				background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat;
+			}
+
+			.hero-banner-text {
+				background: $red-color;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/* ===================================================================================
+OVERRIDING STYLES
+=================================================================================== */
+
+.su-column-size-1-4 {
+	width: 25% !important;
+}
+
+.su-column-size-3-4 {
+	width: 75% !important;
+}
+
+
+
+
+
+

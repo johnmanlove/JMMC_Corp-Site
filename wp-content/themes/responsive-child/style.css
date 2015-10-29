@@ -1,0 +1,85 @@
+/*
+ Theme Name:   John Manlove Custom Theme
+ Theme URI:    http://www.johnmanlove.com
+ Description:  Custom Theme for John Manlove
+ Author:       Rick Celeita
+ Template:     responsive
+ Version:      1.0.0
+*/
+/* ===================================================================================
+GENERAL STYLES
+=================================================================================== */
+* {
+  box-sizing: border-box; }
+
+html {
+  color: black; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; }
+
+body {
+  background: #fff; }
+
+.su-column {
+  margin-right: 0 !important; }
+
+/* ===================================================================================
+HEADER STYLES
+=================================================================================== */
+#container {
+  max-width: 100%;
+  padding: 0;
+  width: 100%; }
+  #container #header {
+    background: #fff;
+    border-bottom: 2px solid #BC2227;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+    #container #header #logo {
+      margin-bottom: 20px;
+      padding: 0 80px; }
+    #container #header .menu {
+      bottom: 0;
+      position: fixed;
+      width: 100%; }
+    #container #header #header-contact {
+      float: right;
+      padding-right: 80px; }
+      #container #header #header-contact h3 {
+        margin: 0; }
+        #container #header #header-contact h3 a {
+          color: black;
+          font-size: 16px;
+          font-weight: normal; }
+
+/* ===================================================================================
+CONTENT STYLES
+=================================================================================== */
+#wrapper {
+  border: 0 none;
+  margin-bottom: 0;
+  margin-top: 77px;
+  padding: 0;
+  max-width: 1280px;
+  min-width: 0px; }
+  #wrapper #content-full {
+    margin: 0; }
+    #wrapper #content-full .post-entry .hero-banner-image {
+      background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat; }
+    #wrapper #content-full .post-entry .hero-banner-text {
+      background: #E64D61; }
+
+/* ===================================================================================
+OVERRIDING STYLES
+=================================================================================== */
+.su-column-size-1-4 {
+  width: 25% !important; }
+
+.su-column-size-3-4 {
+  width: 75% !important; }
+
+/*# sourceMappingURL=style.css.map */
