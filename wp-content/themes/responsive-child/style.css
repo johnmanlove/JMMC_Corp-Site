@@ -132,20 +132,38 @@ CONTENT STYLES
             transition: all .2s; }
             #wrapper #content-full .post-entry .hero-banner .text .su-column-inner a:hover {
               opacity: .6; }
-    #wrapper #content-full .post-entry .news .insideframe table {
-      display: none; }
-    #wrapper #content-full .post-entry .news .insideframe .top, #wrapper #content-full .post-entry .news .insideframe .bottom {
-      clear: none; }
-    #wrapper #content-full .post-entry .news .insideframe .top {
-      float: left;
-      width: 50%; }
-      #wrapper #content-full .post-entry .news .insideframe .top .title {
-        float: right; }
-    #wrapper #content-full .post-entry .news .insideframe .bottom {
-      float: right;
-      width: 50%; }
+    #wrapper #content-full .post-entry .news .insideframe li {
+      position: relative; }
+      #wrapper #content-full .post-entry .news .insideframe li table {
+        display: none; }
+      #wrapper #content-full .post-entry .news .insideframe li .top, #wrapper #content-full .post-entry .news .insideframe li .bottom {
+        clear: none; }
+      #wrapper #content-full .post-entry .news .insideframe li .top {
+        float: left;
+        width: 50%; }
+        #wrapper #content-full .post-entry .news .insideframe li .top .title {
+          float: right; }
+      #wrapper #content-full .post-entry .news .insideframe li .bottom {
+        float: right;
+        width: 50%; }
     #wrapper #content-full .post-entry .news .wpcufpn_container ul {
-      margin: 0; }
+      margin-left: 0 !important; }
+    #wrapper #content-full .post-entry .thoughts .insideframe li {
+      position: relative; }
+      #wrapper #content-full .post-entry .thoughts .insideframe li table {
+        display: none; }
+      #wrapper #content-full .post-entry .thoughts .insideframe li .top, #wrapper #content-full .post-entry .thoughts .insideframe li .bottom {
+        clear: none; }
+      #wrapper #content-full .post-entry .thoughts .insideframe li .top {
+        float: right;
+        width: 50%; }
+        #wrapper #content-full .post-entry .thoughts .insideframe li .top .title {
+          float: left; }
+      #wrapper #content-full .post-entry .thoughts .insideframe li .bottom {
+        float: left;
+        width: 50%; }
+    #wrapper #content-full .post-entry .thoughts .wpcufpn_container ul {
+      margin-left: 0 !important; }
 
 /* ===================================================================================
 FOOTER STYLES

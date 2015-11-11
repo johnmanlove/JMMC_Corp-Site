@@ -210,33 +210,76 @@ CONTENT STYLES
 				
 				.insideframe {
 
-					table {
-						display: none;
-					}
+					li {
+						position: relative;
 
-					.top, .bottom {
-						clear: none;
-					}
-
-					.top {
-						float: left;
-						width: 50%;
-
-						.title {
-							float: right;
+						table {
+							display: none;
 						}
-					}
 
-					.bottom {
-						float: right;
-						width: 50%;
+						.top, .bottom {
+							clear: none;
+						}
+
+						.top {
+							float: left;
+							width: 50%;
+
+							.title {
+								float: right;
+							}
+						}
+
+						.bottom {
+							float: right;
+							width: 50%;
+						}
 					}
 				}
 
 				.wpcufpn_container {
 
 					ul {
-						margin: 0;
+						margin-left: 0 !important;
+					}
+				}
+			}
+
+			.thoughts {
+				
+				.insideframe {
+
+					li {
+						position: relative;
+
+						table {
+							display: none;
+						}
+
+						.top, .bottom {
+							clear: none;
+						}
+
+						.top {
+							float: right;
+							width: 50%;
+
+							.title {
+								float: left;
+							}
+						}
+
+						.bottom {
+							float: left;
+							width: 50%;
+						}
+					}
+				}
+
+				.wpcufpn_container {
+
+					ul {
+						margin-left: 0 !important;
 					}
 				}
 			}
