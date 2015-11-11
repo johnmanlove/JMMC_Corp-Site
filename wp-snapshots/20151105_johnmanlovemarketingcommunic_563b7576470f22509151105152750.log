@@ -1,0 +1,76 @@
+********************************************************************************
+PACKAGE-LOG: 2015-11-05 15:28:11
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	0.5.34
+WORDPRESS:	4.3.1
+PHP INFO:	5.6.10 | SAPI: apache2handler
+SERVER:		Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (128M default) 
+MEMORY STACK: 37.75MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:20 | filtered:0 | create:20 
+FILTERED: [] 
+SQL CREATED: 20151105_johnmanlovemarketingcommunic_563b7576470f22509151105152750_database.sql 
+file size:925375 
+SQL FILE SIZE: 903.69KB 
+SQL FILE TIME: 2015-11-05 15:28:11 
+SQL RUNTIME: 0.11 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Users/artist/Documents/WP_Projects/JMMC_Corp-Site 
+ARCHIVE FILE: 20151105_johnmanlovemarketingcommunic_563b7576470f22509151105152750_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	98.32MB 
+STATS:	Dirs 798 | Files 7,875 
+SQL ADDED: 20151105_johnmanlovemarketingcommunic_563b7576470f22509151105152750_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 8673
+    [filename] => /Users/artist/Documents/WP_Projects/JMMC_Corp-Site/wp-snapshots/tmp/20151105_johnmanlovemarketingcommunic_563b7576470f22509151105152750_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 49MB 
+ARCHIVE RUNTIME: 30.15 sec. 
+MEMORY STACK: 41.5MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [/Users/artist/Documents/WP_Projects/JMMC_Corp-Site/wp-snapshots/tmp/20151105_johnmanlovemarketingcommunic_563b7576470f22509151105152750_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 903.69KB 
+Installer File: 318.07KB 
+Archive File: 49MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 31.98 sec.
+PEAK PHP MEMORY USED: 44MB
+DONE PROCESSING => 20151105_johnmanlovemarketingcommunic 2015-11-05 15:28:43
+ 

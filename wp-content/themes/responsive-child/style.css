@@ -10,16 +10,20 @@
 GENERAL STYLES
 =================================================================================== */
 * {
-  box-sizing: border-box; }
-
-html {
-  color: black; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; }
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Raleway", Helvetica, Arial, sans-serif !important; }
 
 body {
   background: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+  font-weight: normal; }
+
+p {
+  margin-bottom: 1.2em;
+  margin-top: 0; }
 
 .su-column {
   margin-left: 0 !important; }
@@ -33,28 +37,37 @@ HEADER STYLES
   width: 100%; }
   #container #header {
     background: #fff;
-    border-bottom: 2px solid #BC2227;
+    border-bottom: 1px solid #BC2227;
     padding-top: 20px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1; }
-    #container #header #logo {
-      margin-bottom: 20px;
-      padding: 0 80px; }
-    #container #header .menu {
-      bottom: 0;
-      position: fixed;
-      width: 100%; }
-    #container #header #header-contact {
-      float: right;
-      padding-right: 80px; }
-      #container #header #header-contact h3 {
-        margin: 0; }
-        #container #header #header-contact h3 a {
-          color: black;
-          font-size: 16px;
-          font-weight: normal; }
+    z-index: 999; }
+    #container #header #header-container {
+      margin: 0 auto;
+      max-width: 1280px; }
+      #container #header #header-container #logo {
+        margin-bottom: 20px;
+        padding: 0 80px; }
+      #container #header #header-container .main-nav {
+        background: #fafafa;
+        bottom: 0;
+        position: fixed;
+        width: 100%; }
+        #container #header #header-container .main-nav .menu {
+          background-color: transparent;
+          background-image: none;
+          margin: 0 auto;
+          max-width: 1280px; }
+      #container #header #header-container #header-contact {
+        float: right;
+        padding-right: 80px; }
+        #container #header #header-container #header-contact h3 {
+          margin: 0; }
+          #container #header #header-container #header-contact h3 a {
+            color: #000;
+            font-size: 16px;
+            font-weight: normal; }
 
 /* ===================================================================================
 CONTENT STYLES
@@ -62,16 +75,103 @@ CONTENT STYLES
 #wrapper {
   border: 0 none;
   margin-bottom: 0;
-  margin-top: 77px;
+  margin-top: 70px;
   padding: 0;
   max-width: 1280px;
   min-width: 0px; }
   #wrapper #content-full {
     margin: 0; }
-    #wrapper #content-full .post-entry .hero-banner-image {
-      background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat; }
-    #wrapper #content-full .post-entry .hero-banner-text {
-      background: #E64D61; }
+    #wrapper #content-full .post-entry .hero-banner {
+      margin-bottom: 0 !important;
+      max-height: 690px; }
+      #wrapper #content-full .post-entry .hero-banner .image {
+        background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat;
+        min-height: 690px; }
+        #wrapper #content-full .post-entry .hero-banner .image h4 {
+          color: white;
+          line-height: 1.2em;
+          margin-left: 100px;
+          margin-top: 450px;
+          width: 70%; }
+        #wrapper #content-full .post-entry .hero-banner .image p {
+          margin-left: 100px;
+          text-align: center;
+          width: 70%; }
+      #wrapper #content-full .post-entry .hero-banner .text {
+        background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_spheres_small.png") 0 bottom no-repeat;
+        background-color: #E64D61;
+        min-height: 690px; }
+        #wrapper #content-full .post-entry .hero-banner .text .su-column-inner {
+          padding: 25px; }
+          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .alignnone {
+            margin: 0; }
+          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner h2 {
+            color: white;
+            font-size: 20px;
+            line-height: 1.2em;
+            text-transform: uppercase; }
+          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner p, #wrapper #content-full .post-entry .hero-banner .text .su-column-inner li {
+            color: white; }
+          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons {
+            margin: 0;
+            padding: 0; }
+            #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li {
+              color: #000;
+              font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+              font-size: 1.6em;
+              display: inline-block;
+              list-style: none;
+              text-align: center;
+              width: 32%; }
+              #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li img {
+                margin-bottom: 10px; }
+          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner a {
+            color: #000;
+            display: block;
+            font-size: .9em;
+            transition: all .2s; }
+            #wrapper #content-full .post-entry .hero-banner .text .su-column-inner a:hover {
+              opacity: .6; }
+    #wrapper #content-full .post-entry .news .insideframe table {
+      display: none; }
+    #wrapper #content-full .post-entry .news .insideframe .top, #wrapper #content-full .post-entry .news .insideframe .bottom {
+      clear: none; }
+    #wrapper #content-full .post-entry .news .insideframe .top {
+      float: left;
+      width: 50%; }
+      #wrapper #content-full .post-entry .news .insideframe .top .title {
+        float: right; }
+    #wrapper #content-full .post-entry .news .insideframe .bottom {
+      float: right;
+      width: 50%; }
+    #wrapper #content-full .post-entry .news .wpcufpn_container ul {
+      margin: 0; }
+
+/* ===================================================================================
+FOOTER STYLES
+=================================================================================== */
+#footer {
+  border-top: 1px solid #E64D61;
+  max-width: 100%;
+  padding: 0 0 40px 0; }
+  #footer #footer-wrapper {
+    margin: 0 auto;
+    max-width: 1280px; }
+    #footer #footer-wrapper .su-row {
+      margin-bottom: 0 !important; }
+    #footer #footer-wrapper .map iframe {
+      height: 100%;
+      min-height: 300px;
+      width: 100%;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: url(grayscale.svg);
+      /* Firefox 4+ */
+      filter: gray;
+      /* IE 6-9 */ }
 
 /* ===================================================================================
 OVERRIDING STYLES

@@ -55,59 +55,60 @@ if ( !defined( 'ABSPATH' ) ) {
 		<a class="skip-link screen-reader-text focusable" href="#content"><?php _e( '&darr; Skip to Main Content', 'responsive' ); ?></a>
 	</div><!-- .skip-container -->
 	<div id="header">
+		<div id="header-container">
 
-		<?php responsive_header_top(); // before header content hook ?>
+			<?php responsive_header_top(); // before header content hook ?>
 
-		<?php if ( has_nav_menu( 'top-menu', 'responsive' ) ) {
-			wp_nav_menu( array(
-				'container'      => '',
-				'fallback_cb'    => false,
-				'menu_class'     => 'top-menu',
-				'theme_location' => 'top-menu'
-			) );
-		} ?>
+			<?php if ( has_nav_menu( 'top-menu', 'responsive' ) ) {
+				wp_nav_menu( array(
+					'container'      => '',
+					'fallback_cb'    => false,
+					'menu_class'     => 'top-menu',
+					'theme_location' => 'top-menu'
+				) );
+			} ?>
 
-		<?php responsive_in_header(); // header hook ?>
+			<?php responsive_in_header(); // header hook ?>
 
-		<?php if ( get_header_image() != '' ) : ?>
+			<?php if ( get_header_image() != '' ) : ?>
 
-			<div id="logo">
-				<a href="<?php echo home_url( '/' ); ?>"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-			</div><!-- end of #logo -->
-			<div id="header-contact">
-				<h3 class="tel"><a href="tel:281.487.6767">281.487.6767</a></h3>
-				<h3 class="email"><a href="mailto:info@johnmanlove.com">info@johnmanlove.com</a></h3>
-			</div>
+				<div id="logo">
+					<a href="<?php echo home_url( '/' ); ?>"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+				</div><!-- end of #logo -->
+				<div id="header-contact">
+					<h3 class="tel"><a href="tel:281.487.6767">281.487.6767</a></h3>
+					<h3 class="email"><a href="mailto:info@johnmanlove.com">info@johnmanlove.com</a></h3>
+				</div>
 
-		<?php endif; // header image was removed ?>
+			<?php endif; // header image was removed ?>
 
-		<?php if ( !get_header_image() ) : ?>
+			<?php if ( !get_header_image() ) : ?>
 
-			<div id="logo">
-				<span class="site-name"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-				<span class="site-description"><?php bloginfo( 'description' ); ?></span>
-			</div><!-- end of #logo -->
+				<div id="logo">
+					<span class="site-name"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+					<span class="site-description"><?php bloginfo( 'description' ); ?></span>
+				</div><!-- end of #logo -->
 
-		<?php endif; // header image was removed (again) ?>
+			<?php endif; // header image was removed (again) ?>
 
-		<?php get_sidebar( 'top' ); ?>
-		<?php wp_nav_menu( array(
-			'container'       => 'div',
-			'container_class' => 'main-nav',
-			'fallback_cb'     => 'responsive_fallback_menu',
-			'theme_location'  => 'header-menu'
-		) ); ?>
+			<?php get_sidebar( 'top' ); ?>
+			<?php wp_nav_menu( array(
+				'container'       => 'div',
+				'container_class' => 'main-nav',
+				'fallback_cb'     => 'responsive_fallback_menu',
+				'theme_location'  => 'header-menu'
+			) ); ?>
 
-		<?php if ( has_nav_menu( 'sub-header-menu', 'responsive' ) ) {
-			wp_nav_menu( array(
-				'container'      => '',
-				'menu_class'     => 'sub-header-menu',
-				'theme_location' => 'sub-header-menu'
-			) );
-		} ?>
+			<?php if ( has_nav_menu( 'sub-header-menu', 'responsive' ) ) {
+				wp_nav_menu( array(
+					'container'      => '',
+					'menu_class'     => 'sub-header-menu',
+					'theme_location' => 'sub-header-menu'
+				) );
+			} ?>
 
-		<?php responsive_header_bottom(); // after header content hook ?>
-
+			<?php responsive_header_bottom(); // after header content hook ?>
+		</div><!-- end of #header-container -->
 	</div><!-- end of #header -->
 <?php responsive_header_end(); // after header container hook ?>
 
