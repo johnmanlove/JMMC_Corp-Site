@@ -45,9 +45,9 @@ $responsive_options = responsive_get_options();
 					<h2>Contact Us</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cupiditate praesentium consectetur.</p>
 					<p class="contact-info">
-						<img src="" alt=""> 281.487.6767<br />
-						<img src="" alt=""> 5125 Preston ave. Houston, TX 77505<br />
-						<img src="" alt=""> <a href="mailto:info@johnmanlove.com">info@johnmanlove.com</a>
+						<img src="/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_phone.png" alt=""> 281.487.6767<br />
+						<img src="/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_map.png" alt=""> 5125 Preston ave. Houston, TX 77505<br />
+						<img src="/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_mail.png" alt=""> <a href="mailto:info@johnmanlove.com">info@johnmanlove.com</a>
 					</p>
 					<p class="locations">
 						Houston <span>|</span> Austin <span>|</span> Dallas
