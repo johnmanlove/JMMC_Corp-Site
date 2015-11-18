@@ -10,6 +10,8 @@
 $bgcolor: #fff;
 $text-color: #000;
 $red: #E64D61;
+$brown: #BFB6AF;
+$blue: #59C6E5;
 
 
 $font-stack: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
@@ -31,6 +33,11 @@ GENERAL STYLES
 	font-family: $font-sans-serif !important;
 }
 
+::selection {
+	color: white;
+	background: $red;
+}
+
 body {
 	background: $bgcolor;
 }
@@ -40,9 +47,31 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
+h1 {
+	font-size: 5.625em;
+}
+
+h2 {
+	font-size: 3.23em;
+}
+
+h3 {
+	font-size: 2.4em;
+}
+
 p {
 	margin-bottom: 1.2em;
 	margin-top: 0;
+}
+
+blockquote {
+	background: none;
+	border-left: 0 none;
+
+	p {
+		font-family: $font-stack !important;
+		font-style: normal;
+	}
 }
 
 .su-column {
@@ -51,6 +80,10 @@ p {
 
 .post-edit {
 	display: none;
+}
+
+.red {
+	color: $red;
 }
 
 /* ===================================================================================
@@ -78,20 +111,9 @@ HEADER STYLES
 			#logo {
 				margin-bottom: 20px;
 				padding: 0 80px;
-			}
 
-			.main-nav {
-				background: #fafafa;
-				border-top: 1px solid $red;
-				bottom: 0;
-				position: fixed;
-				width: 100%;
-
-				.menu {
-					background-color: transparent;
-					background-image: none;
-					margin: 0 auto;
-					max-width: 1280px;
+				img {
+					width: 300px;
 				}
 			}
 
@@ -110,6 +132,55 @@ HEADER STYLES
 				}
 
 			}
+		}
+
+		.main-nav {
+			background-color: #fafafa;
+			border-top: 1px solid $red;
+			bottom: 0;
+			position: fixed;
+			width: 100%;
+
+			.menu {
+				background-color: transparent;
+				background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/copy-jmmc_logo.png") right 50% no-repeat;
+				background-size: 275px; 
+				margin: 0 auto;
+				max-width: 1280px;
+
+				li {
+
+					&:hover {
+						background-color: transparent;
+					}
+
+					a {
+						background-color: transparent;
+						border-left: 0 none;
+						color: black;
+						font-family: $font-stack !important;
+						font-size: 1.25em;
+						font-weight: normal;
+						padding: 0 1.2em;
+						transition: all .3s;
+						text-shadow: none;
+
+						&:hover {
+							background-color: $red;
+							background-image: none !important;
+							color: white;
+						}
+					}
+
+					&.current_page_item, &.current-menu-item {
+
+						a {
+							background-color: $red;
+							color: white;
+						}
+					}
+				}
+			}
 		}		
 	}
 
@@ -119,385 +190,598 @@ HEADER STYLES
 CONTENT STYLES
 =================================================================================== */
 
-#wrapper {
-	border: $no-border;
-	margin-bottom: 0;
-	margin-top: 70px;
-	padding: 0;
-	max-width: 1280px;
-	min-width: 0px;
+body {
 
-	#content-full {
-		margin: 0;
+	#wrapper {
+		border: $no-border;
+		margin-bottom: 0;
+		margin-top: 90px;
+		padding: 0 40px;
+		max-width: 1280px;
+		min-width: 0px;
 
-		.post-entry {
+		#content-full {
+			margin: 0;
 
-			.hero-banner {
-				margin-bottom: 0 !important;
-				max-height: $hero-banner-height;
+			.post-entry {
 
-				.image {
-					background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat;
-					min-height: $hero-banner-height;
+				.hero-banner {
+					margin-bottom: 0 !important;
+					max-height: $hero-banner-height;
 
-					h4 {
-						color: white;
-						line-height: 1.2em;
-						margin-left: 100px;
-						margin-top: 450px;
-						width: 70%;
+					.image {
+						background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat;
+						min-height: $hero-banner-height;
+
+						h4 {
+							color: white;
+							line-height: 1.2em;
+							margin-left: 100px;
+							margin-top: 450px;
+							width: 70%;
+						}
+
+						p {
+							margin-left: 100px;
+							text-align: center;
+							width: 70%;
+						}
 					}
 
-					p {
-						margin-left: 100px;
-						text-align: center;
-						width: 70%;
+					.text {
+						background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_spheres_small.png") 0 bottom no-repeat;
+						background-color: $red;
+						min-height: $hero-banner-height;
+
+						.su-column-inner {
+							padding: 25px;
+
+							.alignnone {
+								margin: 0;
+							}
+
+							h2 {
+								color: white;
+								font-size: 20px;
+								line-height: 1.2em;
+								text-transform: uppercase;
+							}
+
+							p, li {
+								color: white;
+							}
+
+							.icons {
+								margin: 0;
+								padding: 0;
+
+								li {
+									color: #000;
+									font-family: $font-stack !important;
+									font-size: 1.6em;
+									display: inline-block;
+									list-style: none;
+									text-align: center;
+									width: 32%;
+
+									img {
+										margin-bottom: 10px;
+									}
+								}
+							}
+
+							a {
+								color: #000;
+								display: block;
+								font-size: .9em;
+								transition: all .2s;
+
+								&:hover {
+									opacity: .6;
+								}
+							}
+						}
+					}	
+				}
+				
+				.news {
+					margin-bottom: 0;
+					
+					.insideframe {
+
+						li {
+							position: relative;
+
+							table {
+								display: none;
+							}
+
+							.top, .bottom {
+								clear: none;
+							}
+
+							.top {
+								float: left;
+								width: 50%;
+							}
+
+							.bottom {
+								float: right;
+								padding: 35px;
+								width: 50%;
+
+								.title {
+									background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
+									background-size: 30px;
+									padding-top: 40px;
+
+									span {
+										font-family: $font-stack !important;
+										font-size: 2em;
+										font-weight: normal;
+										text-transform: uppercase;
+									}
+								}
+
+								.read-more {
+									color: $red;
+									font-weight: normal;
+								}
+							}
+						}
+					}
+
+					.wpcufpn_container {
+
+						ul {
+							margin-left: 0 !important;
+						}
 					}
 				}
 
-				.text {
-					background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_spheres_small.png") 0 bottom no-repeat;
-					background-color: $red;
-					min-height: $hero-banner-height;
+				.thoughts {
+					margin-bottom: 0;
+					
+					.insideframe {
 
-					.su-column-inner {
-						padding: 25px;
+						li {
+							position: relative;
 
-						.alignnone {
-							margin: 0;
+							table {
+								display: none;
+							}
+
+							.top, .bottom {
+								clear: none;
+							}
+
+							.top {
+								float: right;
+								width: 50%;
+
+							}
+
+							.bottom {
+								float: left;
+								padding: 35px;
+								width: 50%;
+
+								.title {
+									background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
+									background-size: 30px;
+									padding-top: 40px;
+									
+									span {
+										font-family: $font-stack !important;
+										font-size: 2em;
+										font-weight: normal;
+										text-transform: uppercase;
+									}
+								}
+
+								.read-more {
+									color: $red;
+									font-weight: normal;
+								}
+							}
 						}
+					}
 
-						h2 {
-							color: white;
-							font-size: 20px;
-							line-height: 1.2em;
+					.wpcufpn_container {
+
+						ul {
+							margin-left: 0 !important;
+						}
+					}
+				}
+
+				.home-video {
+					background-color: #f5f5f5;
+					margin-bottom: 0;
+
+					.video-text {
+						padding: 35px;
+
+						h3 {
+							background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
+							background-size: 30px;
+							font-size: 1.7em;
+							padding-top: 40px;
 							text-transform: uppercase;
 						}
 
-						p, li {
-							color: white;
-						}
-
-						.icons {
-							margin: 0;
-							padding: 0;
-
-							li {
-								color: #000;
-								font-family: $font-stack !important;
-								font-size: 1.6em;
-								display: inline-block;
-								list-style: none;
-								text-align: center;
-								width: 32%;
-
-								img {
-									margin-bottom: 10px;
-								}
-							}
-						}
-
 						a {
-							color: #000;
-							display: block;
-							font-size: .9em;
-							transition: all .2s;
+							color: $red;
+							transition: color .2s;
 
 							&:hover {
-								opacity: .6;
-							}
-						}
-					}
-				}	
-			}
-			
-			.news {
-				margin-bottom: 0;
-				
-				.insideframe {
-
-					li {
-						position: relative;
-
-						table {
-							display: none;
-						}
-
-						.top, .bottom {
-							clear: none;
-						}
-
-						.top {
-							float: left;
-							width: 50%;
-						}
-
-						.bottom {
-							float: right;
-							padding: 35px;
-							width: 50%;
-
-							.title {
-								background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
-								background-size: 30px;
-								padding-top: 40px;
-
-								span {
-									font-family: $font-stack !important;
-									font-size: 2em;
-									font-weight: normal;
-									text-transform: uppercase;
-								}
-							}
-
-							.read-more {
-								color: $red;
-								font-weight: normal;
+								color: #999;
 							}
 						}
 					}
 				}
 
-				.wpcufpn_container {
+				.fields {
+					margin-bottom: 0;
 
-					ul {
-						margin-left: 0 !important;
-					}
-				}
-			}
+					.su-column {
+						background-size: cover !important;
+						height: 320px;
 
-			.thoughts {
-				margin-bottom: 0;
-				
-				.insideframe {
-
-					li {
-						position: relative;
-
-						table {
-							display: none;
-						}
-
-						.top, .bottom {
-							clear: none;
-						}
-
-						.top {
-							float: right;
-							width: 50%;
-
-						}
-
-						.bottom {
-							float: left;
-							padding: 35px;
-							width: 50%;
-
-							.title {
-								background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
-								background-size: 30px;
-								padding-top: 40px;
-								
-								span {
-									font-family: $font-stack !important;
-									font-size: 2em;
-									font-weight: normal;
-									text-transform: uppercase;
-								}
-							}
-
-							.read-more {
-								color: $red;
-								font-weight: normal;
-							}
-						}
-					}
-				}
-
-				.wpcufpn_container {
-
-					ul {
-						margin-left: 0 !important;
-					}
-				}
-			}
-
-			.home-video {
-				background-color: #f5f5f5;
-				margin-bottom: 0;
-
-				.video-text {
-					padding: 35px;
-
-					h3 {
-						background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
-						background-size: 30px;
-						font-size: 1.7em;
-						padding-top: 40px;
-						text-transform: uppercase;
-					}
-
-					a {
-						color: $red;
-						transition: color .2s;
-
-						&:hover {
-							color: #999;
-						}
-					}
-				}
-			}
-
-			.fields {
-				margin-bottom: 0;
-
-				.su-column {
-					background-size: cover !important;
-					height: 320px;
-
-					.su-column-inner {
-						height: 100%;
-						width: 100%;
-
-						p {
+						.su-column-inner {
 							height: 100%;
 							width: 100%;
 
-							a {
-								color: white;
-								display: block;
-								font-family: $font-stack !important;
-								font-size: 2em;
+							p {
 								height: 100%;
-								line-height: 100%;
-								padding: 45% 20% 0;
-								text-align: center;
-								transition: color .2s;
 								width: 100%;
 
-								&:hover {
-									color: #ddd;
+								a {
+									color: white;
+									display: block;
+									font-family: $font-stack !important;
+									font-size: 2em;
+									height: 100%;
+									line-height: 100%;
+									padding: 45% 20% 0;
+									text-align: center;
+									transition: color .2s;
+									width: 100%;
+
+									&:hover {
+										color: #ddd;
+									}
 								}
 							}
 						}
 					}
+
+					.retail {
+						background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bgd_retail.png") 0 0 no-repeat;
+					}
+
+					.real-estate {
+						background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_realestate.png") 0 0 no-repeat;
+					}
+
+					.beverages {
+						background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_beverages.png") 0 0 no-repeat;
+					}
+
+					.energy {
+						background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_energy.png") 0 0 no-repeat;
+					}
 				}
 
-				.retail {
-					background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bgd_retail.png") 0 0 no-repeat;
-				}
+				.social {
+					margin-bottom: 0;
 
-				.real-estate {
-					background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_realestate.png") 0 0 no-repeat;
-				}
+					.su-column {
+						background-size: cover;
+						height: 316px;
 
-				.beverages {
-					background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_beverages.png") 0 0 no-repeat;
-				}
+						span {
+							display: block;
 
-				.energy {
-					background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_energy.png") 0 0 no-repeat;
-				}
-			}
+							img {
+								height: 50px;
+							}
 
-			.social {
-				margin-bottom: 0;
+							h2 {
+								color: white;
+								font-size: 2.7em;
+							}
 
-				.su-column {
-					background-size: cover;
-					height: 316px;
+							a {
+								background-color: transparent;
+								border: 1px solid white;
+								color: white;
+								font-family: $font-stack !important;
+								font-size: 1.4em;
+								padding: 5px 20px;
+								transition: all .2s;
 
-					span {
-						display: block;
-
-						img {
-							height: 50px;
-						}
-
-						h2 {
-							color: white;
-						}
-
-						a {
-							background-color: transparent;
-							border: 1px solid white;
-							color: white;
-							font-family: $font-stack !important;
-							font-size: 1.4em;
-							padding: 5px 20px;
-							transition: all .2s;
-
-							&:hover {
-								background-color: #f5f5f5;
-								border-color: #f5f5f5;
-								color: #333;
+								&:hover {
+									background-color: #f5f5f5;
+									border-color: #f5f5f5;
+									color: #333;
+								}
 							}
 						}
 					}
-				}
 
-				.youtube {
-					background:transparent url('/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_youtube.jpg') 0 0 no-repeat;
-					background-size: cover;
-					min-height: 316px;
+					.youtube {
+						background:transparent url('/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_youtube.jpg') 0 0 no-repeat;
+						background-size: cover;
+						min-height: 316px;
 
-					span {
-						float: right;
-						padding-top: 40px;
-						width: 40%;
+						span {
+							float: right;
+							padding-top: 40px;
+							width: 45%;
+						}
+					}
+
+					.instagram {
+						position: relative;
+
+						#sb_instagram {
+							overflow: hidden;
+						}
+
+						span {
+							height: 100%;
+							padding-left: 40px;
+							padding-top: 40px;
+							position: absolute;
+							top: 0;
+							width: 100%;
+						}
+					}
+
+					.facebook {
+						background-color: #3b5998;
+
+						span {
+							display: block;
+							height: 100%;
+							padding-left: 40px;
+							padding-top: 40px;
+							width: 100%;
+						}
 					}
 				}
 
-				.instagram {
-					position: relative;
+				.clients {
+					background-color: #C4BFBA;
+					margin-bottom: 0;
 
-					#sb_instagram {
-						overflow: hidden;
+					table, tr, th, td {
+						background-color: transparent !important;
+						border: 0 none !important;
 					}
 
-					span {
-						height: 100%;
-						padding-left: 40px;
-						padding-top: 40px;
-						position: absolute;
-						top: 0;
-						width: 100%;
+					td {
+						text-align: center;
+						width: 16.6%;
+
+						&.text {
+							padding-left: 30px !important;
+							text-align: left;
+						}
+
+						h2, p {
+							color: white;
+						}
+					}
+				}
+
+				.about-us {
+
+					.su-column:first-child {
+						padding: 40px;
 					}
 				}
 
-				.facebook {
-					background-color: #3b5998;
+				.years {
+					margin-bottom: 40px;
 
-					span {
-						display: block;
-						height: 100%;
-						padding-left: 40px;
-						padding-top: 40px;
-						width: 100%;
+					.su-column:last-child {
+						padding: 50px;
 					}
 				}
-			}
 
-			.clients {
-				background-color: #C4BFBA;
-				margin-bottom: 0;
+				.featured {
+					background-color: $brown;
 
-				table, tr, th, td {
-					background-color: transparent !important;
-					border: 0 none !important;
+					&.john .su-column:first-child,
+					&.gina .su-column:last-child {
+						padding: 80px;
+					}
+
+					.su-column {
+
+						h2, p, a {
+							color: white;
+						}
+					}
 				}
 
-				td {
-					width: 16.6%;
+				.our-team {
+					margin-bottom: 40px;
+					padding: 0px 80px;
+				}
 
-					h2, p {
-						color: white;
+				.team {
+					background-color: $blue;
+					margin-bottom: 60px;
+
+					.su-column {
+
+						.su-column-inner {
+							&> div {
+								min-height: 400px;
+								padding: 60px 30px 30px;
+
+								h3, p, a {
+									color: white;
+								}
+
+								h3 {
+									margin-bottom: .25em;
+								}
+							} 
+						}
+					}
+					
+					.leah {
+						background-color: $brown;
+					}
+
+					.eddy {
+						background-color: $red;
+					}
+
+					.vicente {
+						background-color: $red;
+					}
+
+					.rick {
+						background-color: $brown;
+					}
+				}
+
+				.awards {
+
+					margin-bottom: 40px;
+
+					.su-column {
+						padding: 0px 30px;
+
+						h2 {
+							margin-bottom: .9em;
+							line-height: 65px;
+
+							&+ p {
+								font-weight: bold;
+							}
+						}
+
+						h3 {
+							color: $red;
+							font-size: 2.2em;
+							text-transform: uppercase;
+						}	
+					}
+				}
+
+				.featured-case {
+					
+					.su-column {
+
+						&:first-child {
+							padding: 80px 80px 0;
+						}
+					}
+				}
+
+				.secondary {
+
+					.float-img {
+						margin-top: -300px;
+					}
+
+					.su-column {
+
+						&:last-child {
+							padding: 80px 50px 0;
+						}
+					}
+				}
+
+				.cs-content {
+					margin-bottom: 40px;
+
+					.content {
+						padding: 80px 50px 0;
 					}
 				}
 			}
 		}
+
+		.capabilities {
+			margin-bottom: 40px;
+
+			.su-column {
+				padding: 40px;
+
+				.red {
+					list-style: none;
+					margin: 0 0 20px;
+					padding: 0;
+
+					li {
+						color: $red;
+					}
+				}
+			}
+		}
+
+		.lets-talk {
+
+			.spheres {
+				margin-left: -40px !important;
+			}
+
+			h3 {
+				font-size: 3em;
+
+				a {
+					background-color: transparent;
+					border: 1px solid $red;
+					-webkit-box-shadow: 7px 7px 0 0 #f1f1f1;
+							box-shadow: 7px 7px 0 0 #f1f1f1;
+					color: $red;
+					font-family: $font-stack !important;
+					font-weight: normal;
+					padding: 5px 25px;
+					transition: all .4s;
+
+					&:hover {
+						background-color: $red;
+						-webkit-box-shadow: -4px -4px 0 0 #ccc;
+								box-shadow: -4px -4px 0 0 #ccc;
+						color: white;
+					}
+				}
+
+				&:first-of-type {
+					margin-top: 150px;
+				}
+			}
+		}
+	}
+
+	&.home {
+
+		#wrapper {
+			padding: 0 !important;
+		}
+	}
+
+	.su-row {
+		margin-bottom: 0;
+
+		.su-column {
+
+			.alignnone {
+				margin: 0;
+			}
+		}
 	}
 }
+
+
 
 /* ===================================================================================
 FOOTER STYLES
@@ -512,6 +796,7 @@ FOOTER STYLES
 		max-width: 1280px;
 		
 		.su-row {
+			border-top: 1px solid $red;
 			margin-bottom: 0 !important;
 		}
 
@@ -555,6 +840,10 @@ OVERRIDING STYLES
 
 .su-column-size-1-2 {
 	width: 50% !important;
+}
+
+.su-column-size-1-3 {
+	width: 33.33% !important;
 }
 
 .su-column-size-3-4 {

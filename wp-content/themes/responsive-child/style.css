@@ -14,6 +14,10 @@ GENERAL STYLES
   color: #000;
   font-family: "Raleway", Helvetica, Arial, sans-serif !important; }
 
+::selection {
+  color: white;
+  background: #E64D61; }
+
 body {
   background: #fff; }
 
@@ -21,15 +25,34 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
   font-weight: normal; }
 
+h1 {
+  font-size: 5.625em; }
+
+h2 {
+  font-size: 3.23em; }
+
+h3 {
+  font-size: 2.4em; }
+
 p {
   margin-bottom: 1.2em;
   margin-top: 0; }
+
+blockquote {
+  background: none;
+  border-left: 0 none; }
+  blockquote p {
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+    font-style: normal; }
 
 .su-column {
   margin-left: 0 !important; }
 
 .post-edit {
   display: none; }
+
+.red {
+  color: #E64D61; }
 
 /* ===================================================================================
 HEADER STYLES
@@ -52,17 +75,8 @@ HEADER STYLES
       #container #header #header-container #logo {
         margin-bottom: 20px;
         padding: 0 80px; }
-      #container #header #header-container .main-nav {
-        background: #fafafa;
-        border-top: 1px solid #E64D61;
-        bottom: 0;
-        position: fixed;
-        width: 100%; }
-        #container #header #header-container .main-nav .menu {
-          background-color: transparent;
-          background-image: none;
-          margin: 0 auto;
-          max-width: 1280px; }
+        #container #header #header-container #logo img {
+          width: 300px; }
       #container #header #header-container #header-contact {
         float: right;
         padding-right: 80px; }
@@ -72,54 +86,85 @@ HEADER STYLES
             color: #000;
             font-size: 16px;
             font-weight: normal; }
+    #container #header .main-nav {
+      background-color: #fafafa;
+      border-top: 1px solid #E64D61;
+      bottom: 0;
+      position: fixed;
+      width: 100%; }
+      #container #header .main-nav .menu {
+        background-color: transparent;
+        background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/copy-jmmc_logo.png") right 50% no-repeat;
+        background-size: 275px;
+        margin: 0 auto;
+        max-width: 1280px; }
+        #container #header .main-nav .menu li:hover {
+          background-color: transparent; }
+        #container #header .main-nav .menu li a {
+          background-color: transparent;
+          border-left: 0 none;
+          color: black;
+          font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+          font-size: 1.25em;
+          font-weight: normal;
+          padding: 0 1.2em;
+          transition: all .3s;
+          text-shadow: none; }
+          #container #header .main-nav .menu li a:hover {
+            background-color: #E64D61;
+            background-image: none !important;
+            color: white; }
+        #container #header .main-nav .menu li.current_page_item a, #container #header .main-nav .menu li.current-menu-item a {
+          background-color: #E64D61;
+          color: white; }
 
 /* ===================================================================================
 CONTENT STYLES
 =================================================================================== */
-#wrapper {
+body #wrapper {
   border: 0 none;
   margin-bottom: 0;
-  margin-top: 70px;
-  padding: 0;
+  margin-top: 90px;
+  padding: 0 40px;
   max-width: 1280px;
   min-width: 0px; }
-  #wrapper #content-full {
+  body #wrapper #content-full {
     margin: 0; }
-    #wrapper #content-full .post-entry .hero-banner {
+    body #wrapper #content-full .post-entry .hero-banner {
       margin-bottom: 0 !important;
       max-height: 690px; }
-      #wrapper #content-full .post-entry .hero-banner .image {
+      body #wrapper #content-full .post-entry .hero-banner .image {
         background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat;
         min-height: 690px; }
-        #wrapper #content-full .post-entry .hero-banner .image h4 {
+        body #wrapper #content-full .post-entry .hero-banner .image h4 {
           color: white;
           line-height: 1.2em;
           margin-left: 100px;
           margin-top: 450px;
           width: 70%; }
-        #wrapper #content-full .post-entry .hero-banner .image p {
+        body #wrapper #content-full .post-entry .hero-banner .image p {
           margin-left: 100px;
           text-align: center;
           width: 70%; }
-      #wrapper #content-full .post-entry .hero-banner .text {
+      body #wrapper #content-full .post-entry .hero-banner .text {
         background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_spheres_small.png") 0 bottom no-repeat;
         background-color: #E64D61;
         min-height: 690px; }
-        #wrapper #content-full .post-entry .hero-banner .text .su-column-inner {
+        body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner {
           padding: 25px; }
-          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .alignnone {
+          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .alignnone {
             margin: 0; }
-          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner h2 {
+          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner h2 {
             color: white;
             font-size: 20px;
             line-height: 1.2em;
             text-transform: uppercase; }
-          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner p, #wrapper #content-full .post-entry .hero-banner .text .su-column-inner li {
+          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner p, body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner li {
             color: white; }
-          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons {
+          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons {
             margin: 0;
             padding: 0; }
-            #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li {
+            body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li {
               color: #000;
               font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
               font-size: 1.6em;
@@ -127,101 +172,101 @@ CONTENT STYLES
               list-style: none;
               text-align: center;
               width: 32%; }
-              #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li img {
+              body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li img {
                 margin-bottom: 10px; }
-          #wrapper #content-full .post-entry .hero-banner .text .su-column-inner a {
+          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner a {
             color: #000;
             display: block;
             font-size: .9em;
             transition: all .2s; }
-            #wrapper #content-full .post-entry .hero-banner .text .su-column-inner a:hover {
+            body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner a:hover {
               opacity: .6; }
-    #wrapper #content-full .post-entry .news {
+    body #wrapper #content-full .post-entry .news {
       margin-bottom: 0; }
-      #wrapper #content-full .post-entry .news .insideframe li {
+      body #wrapper #content-full .post-entry .news .insideframe li {
         position: relative; }
-        #wrapper #content-full .post-entry .news .insideframe li table {
+        body #wrapper #content-full .post-entry .news .insideframe li table {
           display: none; }
-        #wrapper #content-full .post-entry .news .insideframe li .top, #wrapper #content-full .post-entry .news .insideframe li .bottom {
+        body #wrapper #content-full .post-entry .news .insideframe li .top, body #wrapper #content-full .post-entry .news .insideframe li .bottom {
           clear: none; }
-        #wrapper #content-full .post-entry .news .insideframe li .top {
+        body #wrapper #content-full .post-entry .news .insideframe li .top {
           float: left;
           width: 50%; }
-        #wrapper #content-full .post-entry .news .insideframe li .bottom {
+        body #wrapper #content-full .post-entry .news .insideframe li .bottom {
           float: right;
           padding: 35px;
           width: 50%; }
-          #wrapper #content-full .post-entry .news .insideframe li .bottom .title {
+          body #wrapper #content-full .post-entry .news .insideframe li .bottom .title {
             background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
             background-size: 30px;
             padding-top: 40px; }
-            #wrapper #content-full .post-entry .news .insideframe li .bottom .title span {
+            body #wrapper #content-full .post-entry .news .insideframe li .bottom .title span {
               font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
               font-size: 2em;
               font-weight: normal;
               text-transform: uppercase; }
-          #wrapper #content-full .post-entry .news .insideframe li .bottom .read-more {
+          body #wrapper #content-full .post-entry .news .insideframe li .bottom .read-more {
             color: #E64D61;
             font-weight: normal; }
-      #wrapper #content-full .post-entry .news .wpcufpn_container ul {
+      body #wrapper #content-full .post-entry .news .wpcufpn_container ul {
         margin-left: 0 !important; }
-    #wrapper #content-full .post-entry .thoughts {
+    body #wrapper #content-full .post-entry .thoughts {
       margin-bottom: 0; }
-      #wrapper #content-full .post-entry .thoughts .insideframe li {
+      body #wrapper #content-full .post-entry .thoughts .insideframe li {
         position: relative; }
-        #wrapper #content-full .post-entry .thoughts .insideframe li table {
+        body #wrapper #content-full .post-entry .thoughts .insideframe li table {
           display: none; }
-        #wrapper #content-full .post-entry .thoughts .insideframe li .top, #wrapper #content-full .post-entry .thoughts .insideframe li .bottom {
+        body #wrapper #content-full .post-entry .thoughts .insideframe li .top, body #wrapper #content-full .post-entry .thoughts .insideframe li .bottom {
           clear: none; }
-        #wrapper #content-full .post-entry .thoughts .insideframe li .top {
+        body #wrapper #content-full .post-entry .thoughts .insideframe li .top {
           float: right;
           width: 50%; }
-        #wrapper #content-full .post-entry .thoughts .insideframe li .bottom {
+        body #wrapper #content-full .post-entry .thoughts .insideframe li .bottom {
           float: left;
           padding: 35px;
           width: 50%; }
-          #wrapper #content-full .post-entry .thoughts .insideframe li .bottom .title {
+          body #wrapper #content-full .post-entry .thoughts .insideframe li .bottom .title {
             background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
             background-size: 30px;
             padding-top: 40px; }
-            #wrapper #content-full .post-entry .thoughts .insideframe li .bottom .title span {
+            body #wrapper #content-full .post-entry .thoughts .insideframe li .bottom .title span {
               font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
               font-size: 2em;
               font-weight: normal;
               text-transform: uppercase; }
-          #wrapper #content-full .post-entry .thoughts .insideframe li .bottom .read-more {
+          body #wrapper #content-full .post-entry .thoughts .insideframe li .bottom .read-more {
             color: #E64D61;
             font-weight: normal; }
-      #wrapper #content-full .post-entry .thoughts .wpcufpn_container ul {
+      body #wrapper #content-full .post-entry .thoughts .wpcufpn_container ul {
         margin-left: 0 !important; }
-    #wrapper #content-full .post-entry .home-video {
+    body #wrapper #content-full .post-entry .home-video {
       background-color: #f5f5f5;
       margin-bottom: 0; }
-      #wrapper #content-full .post-entry .home-video .video-text {
+      body #wrapper #content-full .post-entry .home-video .video-text {
         padding: 35px; }
-        #wrapper #content-full .post-entry .home-video .video-text h3 {
+        body #wrapper #content-full .post-entry .home-video .video-text h3 {
           background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_title-spheres.png") 0 0 no-repeat;
           background-size: 30px;
           font-size: 1.7em;
           padding-top: 40px;
           text-transform: uppercase; }
-        #wrapper #content-full .post-entry .home-video .video-text a {
+        body #wrapper #content-full .post-entry .home-video .video-text a {
           color: #E64D61;
           transition: color .2s; }
-          #wrapper #content-full .post-entry .home-video .video-text a:hover {
+          body #wrapper #content-full .post-entry .home-video .video-text a:hover {
             color: #999; }
-    #wrapper #content-full .post-entry .fields {
+    body #wrapper #content-full .post-entry .fields {
       margin-bottom: 0; }
-      #wrapper #content-full .post-entry .fields .su-column {
+      body #wrapper #content-full .post-entry .fields .su-column {
         background-size: cover !important;
         height: 320px; }
-        #wrapper #content-full .post-entry .fields .su-column .su-column-inner {
+        body #wrapper #content-full .post-entry .fields .su-column .su-column-inner {
           height: 100%;
           width: 100%; }
-          #wrapper #content-full .post-entry .fields .su-column .su-column-inner p {
+          body #wrapper #content-full .post-entry .fields .su-column .su-column-inner p {
             height: 100%;
             width: 100%; }
-            #wrapper #content-full .post-entry .fields .su-column .su-column-inner p a {
+            body #wrapper #content-full .post-entry .fields .su-column .su-column-inner p a {
               color: white;
               display: block;
               font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
@@ -232,28 +277,29 @@ CONTENT STYLES
               text-align: center;
               transition: color .2s;
               width: 100%; }
-              #wrapper #content-full .post-entry .fields .su-column .su-column-inner p a:hover {
+              body #wrapper #content-full .post-entry .fields .su-column .su-column-inner p a:hover {
                 color: #ddd; }
-      #wrapper #content-full .post-entry .fields .retail {
+      body #wrapper #content-full .post-entry .fields .retail {
         background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bgd_retail.png") 0 0 no-repeat; }
-      #wrapper #content-full .post-entry .fields .real-estate {
+      body #wrapper #content-full .post-entry .fields .real-estate {
         background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_realestate.png") 0 0 no-repeat; }
-      #wrapper #content-full .post-entry .fields .beverages {
+      body #wrapper #content-full .post-entry .fields .beverages {
         background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_beverages.png") 0 0 no-repeat; }
-      #wrapper #content-full .post-entry .fields .energy {
+      body #wrapper #content-full .post-entry .fields .energy {
         background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_energy.png") 0 0 no-repeat; }
-    #wrapper #content-full .post-entry .social {
+    body #wrapper #content-full .post-entry .social {
       margin-bottom: 0; }
-      #wrapper #content-full .post-entry .social .su-column {
+      body #wrapper #content-full .post-entry .social .su-column {
         background-size: cover;
         height: 316px; }
-        #wrapper #content-full .post-entry .social .su-column span {
+        body #wrapper #content-full .post-entry .social .su-column span {
           display: block; }
-          #wrapper #content-full .post-entry .social .su-column span img {
+          body #wrapper #content-full .post-entry .social .su-column span img {
             height: 50px; }
-          #wrapper #content-full .post-entry .social .su-column span h2 {
-            color: white; }
-          #wrapper #content-full .post-entry .social .su-column span a {
+          body #wrapper #content-full .post-entry .social .su-column span h2 {
+            color: white;
+            font-size: 2.7em; }
+          body #wrapper #content-full .post-entry .social .su-column span a {
             background-color: transparent;
             border: 1px solid white;
             color: white;
@@ -261,47 +307,144 @@ CONTENT STYLES
             font-size: 1.4em;
             padding: 5px 20px;
             transition: all .2s; }
-            #wrapper #content-full .post-entry .social .su-column span a:hover {
+            body #wrapper #content-full .post-entry .social .su-column span a:hover {
               background-color: #f5f5f5;
               border-color: #f5f5f5;
               color: #333; }
-      #wrapper #content-full .post-entry .social .youtube {
+      body #wrapper #content-full .post-entry .social .youtube {
         background: transparent url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_youtube.jpg") 0 0 no-repeat;
         background-size: cover;
         min-height: 316px; }
-        #wrapper #content-full .post-entry .social .youtube span {
+        body #wrapper #content-full .post-entry .social .youtube span {
           float: right;
           padding-top: 40px;
-          width: 40%; }
-      #wrapper #content-full .post-entry .social .instagram {
+          width: 45%; }
+      body #wrapper #content-full .post-entry .social .instagram {
         position: relative; }
-        #wrapper #content-full .post-entry .social .instagram #sb_instagram {
+        body #wrapper #content-full .post-entry .social .instagram #sb_instagram {
           overflow: hidden; }
-        #wrapper #content-full .post-entry .social .instagram span {
+        body #wrapper #content-full .post-entry .social .instagram span {
           height: 100%;
           padding-left: 40px;
           padding-top: 40px;
           position: absolute;
           top: 0;
           width: 100%; }
-      #wrapper #content-full .post-entry .social .facebook {
+      body #wrapper #content-full .post-entry .social .facebook {
         background-color: #3b5998; }
-        #wrapper #content-full .post-entry .social .facebook span {
+        body #wrapper #content-full .post-entry .social .facebook span {
           display: block;
           height: 100%;
           padding-left: 40px;
           padding-top: 40px;
           width: 100%; }
-    #wrapper #content-full .post-entry .clients {
+    body #wrapper #content-full .post-entry .clients {
       background-color: #C4BFBA;
       margin-bottom: 0; }
-      #wrapper #content-full .post-entry .clients table, #wrapper #content-full .post-entry .clients tr, #wrapper #content-full .post-entry .clients th, #wrapper #content-full .post-entry .clients td {
+      body #wrapper #content-full .post-entry .clients table, body #wrapper #content-full .post-entry .clients tr, body #wrapper #content-full .post-entry .clients th, body #wrapper #content-full .post-entry .clients td {
         background-color: transparent !important;
         border: 0 none !important; }
-      #wrapper #content-full .post-entry .clients td {
+      body #wrapper #content-full .post-entry .clients td {
+        text-align: center;
         width: 16.6%; }
-        #wrapper #content-full .post-entry .clients td h2, #wrapper #content-full .post-entry .clients td p {
+        body #wrapper #content-full .post-entry .clients td.text {
+          padding-left: 30px !important;
+          text-align: left; }
+        body #wrapper #content-full .post-entry .clients td h2, body #wrapper #content-full .post-entry .clients td p {
           color: white; }
+    body #wrapper #content-full .post-entry .about-us .su-column:first-child {
+      padding: 40px; }
+    body #wrapper #content-full .post-entry .years {
+      margin-bottom: 40px; }
+      body #wrapper #content-full .post-entry .years .su-column:last-child {
+        padding: 50px; }
+    body #wrapper #content-full .post-entry .featured {
+      background-color: #BFB6AF; }
+      body #wrapper #content-full .post-entry .featured.john .su-column:first-child, body #wrapper #content-full .post-entry .featured.gina .su-column:last-child {
+        padding: 80px; }
+      body #wrapper #content-full .post-entry .featured .su-column h2, body #wrapper #content-full .post-entry .featured .su-column p, body #wrapper #content-full .post-entry .featured .su-column a {
+        color: white; }
+    body #wrapper #content-full .post-entry .our-team {
+      margin-bottom: 40px;
+      padding: 0px 80px; }
+    body #wrapper #content-full .post-entry .team {
+      background-color: #59C6E5;
+      margin-bottom: 60px; }
+      body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div {
+        min-height: 400px;
+        padding: 60px 30px 30px; }
+        body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div h3, body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div p, body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div a {
+          color: white; }
+        body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div h3 {
+          margin-bottom: .25em; }
+      body #wrapper #content-full .post-entry .team .leah {
+        background-color: #BFB6AF; }
+      body #wrapper #content-full .post-entry .team .eddy {
+        background-color: #E64D61; }
+      body #wrapper #content-full .post-entry .team .vicente {
+        background-color: #E64D61; }
+      body #wrapper #content-full .post-entry .team .rick {
+        background-color: #BFB6AF; }
+    body #wrapper #content-full .post-entry .awards {
+      margin-bottom: 40px; }
+      body #wrapper #content-full .post-entry .awards .su-column {
+        padding: 0px 30px; }
+        body #wrapper #content-full .post-entry .awards .su-column h2 {
+          margin-bottom: .9em;
+          line-height: 65px; }
+          body #wrapper #content-full .post-entry .awards .su-column h2 + p {
+            font-weight: bold; }
+        body #wrapper #content-full .post-entry .awards .su-column h3 {
+          color: #E64D61;
+          font-size: 2.2em;
+          text-transform: uppercase; }
+    body #wrapper #content-full .post-entry .featured-case .su-column:first-child {
+      padding: 80px 80px 0; }
+    body #wrapper #content-full .post-entry .secondary .float-img {
+      margin-top: -300px; }
+    body #wrapper #content-full .post-entry .secondary .su-column:last-child {
+      padding: 80px 50px 0; }
+    body #wrapper #content-full .post-entry .cs-content {
+      margin-bottom: 40px; }
+      body #wrapper #content-full .post-entry .cs-content .content {
+        padding: 80px 50px 0; }
+  body #wrapper .capabilities {
+    margin-bottom: 40px; }
+    body #wrapper .capabilities .su-column {
+      padding: 40px; }
+      body #wrapper .capabilities .su-column .red {
+        list-style: none;
+        margin: 0 0 20px;
+        padding: 0; }
+        body #wrapper .capabilities .su-column .red li {
+          color: #E64D61; }
+  body #wrapper .lets-talk .spheres {
+    margin-left: -40px !important; }
+  body #wrapper .lets-talk h3 {
+    font-size: 3em; }
+    body #wrapper .lets-talk h3 a {
+      background-color: transparent;
+      border: 1px solid #E64D61;
+      -webkit-box-shadow: 7px 7px 0 0 #f1f1f1;
+      box-shadow: 7px 7px 0 0 #f1f1f1;
+      color: #E64D61;
+      font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+      font-weight: normal;
+      padding: 5px 25px;
+      transition: all .4s; }
+      body #wrapper .lets-talk h3 a:hover {
+        background-color: #E64D61;
+        -webkit-box-shadow: -4px -4px 0 0 #ccc;
+        box-shadow: -4px -4px 0 0 #ccc;
+        color: white; }
+    body #wrapper .lets-talk h3:first-of-type {
+      margin-top: 150px; }
+body.home #wrapper {
+  padding: 0 !important; }
+body .su-row {
+  margin-bottom: 0; }
+  body .su-row .su-column .alignnone {
+    margin: 0; }
 
 /* ===================================================================================
 FOOTER STYLES
@@ -313,6 +456,7 @@ FOOTER STYLES
     margin: 0 auto;
     max-width: 1280px; }
     #footer #footer-wrapper .su-row {
+      border-top: 1px solid #E64D61;
       margin-bottom: 0 !important; }
     #footer #footer-wrapper .map iframe {
       height: 100%;
@@ -340,6 +484,9 @@ OVERRIDING STYLES
 
 .su-column-size-1-2 {
   width: 50% !important; }
+
+.su-column-size-1-3 {
+  width: 33.33% !important; }
 
 .su-column-size-3-4 {
   width: 75% !important; }

@@ -79,6 +79,7 @@ if ( !defined( 'ABSPATH' ) ) {
 					<h3 class="tel"><a href="tel:281.487.6767">281.487.6767</a></h3>
 					<h3 class="email"><a href="mailto:info@johnmanlove.com">info@johnmanlove.com</a></h3>
 				</div>
+			</div><!-- end of #header-container -->
 
 			<?php endif; // header image was removed ?>
 
@@ -108,7 +109,6 @@ if ( !defined( 'ABSPATH' ) ) {
 			} ?>
 
 			<?php responsive_header_bottom(); // after header content hook ?>
-		</div><!-- end of #header-container -->
 	</div><!-- end of #header -->
 <?php responsive_header_end(); // after header container hook ?>
 
