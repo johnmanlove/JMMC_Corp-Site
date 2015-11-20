@@ -54,6 +54,9 @@ blockquote {
 .red {
   color: #E64D61; }
 
+.alignnone {
+  margin: 0; }
+
 /* ===================================================================================
 HEADER STYLES
 =================================================================================== */
@@ -98,25 +101,49 @@ HEADER STYLES
         background-size: 275px;
         margin: 0 auto;
         max-width: 1280px; }
-        #container #header .main-nav .menu li:hover {
-          background-color: transparent; }
-        #container #header .main-nav .menu li a {
-          background-color: transparent;
-          border-left: 0 none;
-          color: black;
-          font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
-          font-size: 1.25em;
-          font-weight: normal;
-          padding: 0 1.2em;
-          transition: all .3s;
-          text-shadow: none; }
-          #container #header .main-nav .menu li a:hover {
-            background-color: #E64D61;
-            background-image: none !important;
-            color: white; }
-        #container #header .main-nav .menu li.current_page_item a, #container #header .main-nav .menu li.current-menu-item a {
-          background-color: #E64D61;
-          color: white; }
+        #container #header .main-nav .menu li {
+          margin-right: 10px; }
+          #container #header .main-nav .menu li:hover {
+            background-color: transparent; }
+          #container #header .main-nav .menu li a {
+            background-color: transparent;
+            border-left: 0 none;
+            border-top: 10px solid transparent;
+            color: black;
+            font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+            font-size: 1.25em;
+            font-weight: normal;
+            margin-top: -10px;
+            padding: 0 1.2em;
+            transition: all .3s;
+            text-shadow: none; }
+            #container #header .main-nav .menu li a:hover {
+              background-color: #E64D61;
+              background-image: none !important;
+              border-top-color: #E64D61;
+              color: white;
+              line-height: 25px; }
+          #container #header .main-nav .menu li.current_page_item, #container #header .main-nav .menu li.current-menu-item {
+            /*&::after {
+            	border-bottom: 10px solid $blue;
+                border-right: 10px solid transparent;
+                content: "";
+                position: absolute;
+                right: -10px;
+                top: -10px;
+            }*/ }
+            #container #header .main-nav .menu li.current_page_item a, #container #header .main-nav .menu li.current-menu-item a {
+              background-color: #E64D61;
+              border-top-color: #E64D61;
+              color: white;
+              line-height: 25px; }
+            #container #header .main-nav .menu li.current_page_item::before, #container #header .main-nav .menu li.current-menu-item::before {
+              border-bottom: 10px solid #BFB6AF;
+              border-left: 10px solid transparent;
+              content: "";
+              position: absolute;
+              left: -10px;
+              top: -10px; }
 
 /* ===================================================================================
 CONTENT STYLES
@@ -152,8 +179,6 @@ body #wrapper {
         min-height: 690px; }
         body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner {
           padding: 25px; }
-          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .alignnone {
-            margin: 0; }
           body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner h2 {
             color: white;
             font-size: 20px;
@@ -408,6 +433,15 @@ body #wrapper {
       margin-bottom: 40px; }
       body #wrapper #content-full .post-entry .cs-content .content {
         padding: 80px 50px 0; }
+    body #wrapper #content-full .post-entry .cube-portfolio #cbpw-filters3 .cbp-filter-item {
+      font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+      font-size: 2em !important; }
+      body #wrapper #content-full .post-entry .cube-portfolio #cbpw-filters3 .cbp-filter-item:nth-child(2) {
+        color: #E64D61 !important; }
+      body #wrapper #content-full .post-entry .cube-portfolio #cbpw-filters3 .cbp-filter-item:nth-child(3) {
+        color: #59C6E5 !important; }
+      body #wrapper #content-full .post-entry .cube-portfolio #cbpw-filters3 .cbp-filter-item:nth-child(4) {
+        color: #BFB6AF !important; }
   body #wrapper .capabilities {
     margin-bottom: 40px; }
     body #wrapper .capabilities .su-column {
@@ -439,6 +473,57 @@ body #wrapper {
         color: white; }
     body #wrapper .lets-talk h3:first-of-type {
       margin-top: 150px; }
+  body #wrapper .video-gallery h2 {
+    color: #BFB6AF;
+    text-align: center; }
+  body #wrapper .video-gallery .rs-fullvideo-cover {
+    display: none; }
+  body #wrapper .spheres-row {
+    background-color: #E64D61;
+    margin-top: 40px;
+    padding: 50px 0; }
+  body #wrapper .cbp-wrapper .cbp-l-grid-blog-title {
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+    font-size: 1.7em !important; }
+  body #wrapper .cbp-wrapper .talks .cbp-l-grid-blog-title {
+    color: #E64D61 !important; }
+  body #wrapper .cbp-wrapper .thoughts .cbp-l-grid-blog-title {
+    color: #59C6E5 !important; }
+  body #wrapper .cbp-wrapper .news .cbp-l-grid-blog-title {
+    color: #BFB6AF !important; }
+  body #wrapper .contact .su-column {
+    padding: 40px; }
+    body #wrapper .contact .su-column.contact-form input[type="text"] {
+      background-image: none !important;
+      border: 1px solid black;
+      border-radius: 0;
+      box-shadow: none;
+      transition: all .2s;
+      width: 100%; }
+      body #wrapper .contact .su-column.contact-form input[type="text"]:focus {
+        box-shadow: 0 0 3px #59C6E5;
+        border-color: #59C6E5; }
+    body #wrapper .contact .su-column.contact-form .cc_Go {
+      text-align: right; }
+      body #wrapper .contact .su-column.contact-form .cc_Go input[type="submit"] {
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid #E64D61;
+        -webkit-box-shadow: 7px 7px 0 0 #f1f1f1;
+        box-shadow: 7px 7px 0 0 #f1f1f1;
+        border-radius: 0;
+        color: #E64D61;
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+        font-size: 1.8em;
+        font-weight: normal;
+        padding: 15px 35px;
+        transition: all .4s;
+        text-shadow: none; }
+        body #wrapper .contact .su-column.contact-form .cc_Go input[type="submit"]:hover {
+          background-color: #E64D61;
+          -webkit-box-shadow: -4px -4px 0 0 #ccc;
+          box-shadow: -4px -4px 0 0 #ccc;
+          color: white; }
 body.home #wrapper {
   padding: 0 !important; }
 body .su-row {

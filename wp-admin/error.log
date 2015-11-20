@@ -4136,3 +4136,155 @@ Stack Trace: #0 /Users/artist/Documents/WP_Projects/JMMC_Corp-Site/wp-content/pl
 #9 /Users/artist/Documents/WP_Projects/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/artist/D...')
 #10 {main}
 
+Constant Contact Exception -- November 19, 2015, 10:52:02am
+Constant Contact HTTP Request Exception: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Error>
+    <ErrorCode>403</ErrorCode>
+    <ErrorMessages>SiteOwner johnmanlove does not have access to EventSpot product</ErrorMessages>
+</Error>
+
+Stack Trace: #0 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/Collections.php(620): CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/ConstantContact.php(524): EventsCollection->getEvents(NULL)
+#2 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/functions.php(42): ConstantContact->getEvents(NULL)
+#3 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/views/embed-form.php(55): constant_contact_old_api_get_all('Events', Object(KWS_V1API), NULL, Array, NULL, true)
+#4 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/inc/functions.php(36): include('/Users/Rick/Doc...')
+#5 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/embed.php(54): kws_ob_include('/Users/Rick/Doc...')
+#6 [internal function]: eventspot_add_mce_popup('')
+#7 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-includes/plugin.php(503): call_user_func_array('eventspot_add_m...', Array)
+#8 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/admin-footer.php(67): do_action('admin_footer', '')
+#9 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/Rick/Doc...')
+#10 {main}
+
+Constant Contact Exception -- November 19, 2015, 10:53:07am
+Constant Contact HTTP Request Exception: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Error>
+    <ErrorCode>403</ErrorCode>
+    <ErrorMessages>SiteOwner johnmanlove does not have access to EventSpot product</ErrorMessages>
+</Error>
+
+Stack Trace: #0 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/Collections.php(620): CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/ConstantContact.php(524): EventsCollection->getEvents(NULL)
+#2 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/functions.php(42): ConstantContact->getEvents(NULL)
+#3 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/views/embed-form.php(55): constant_contact_old_api_get_all('Events', Object(KWS_V1API), NULL, Array, NULL, true)
+#4 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/inc/functions.php(36): include('/Users/Rick/Doc...')
+#5 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/embed.php(54): kws_ob_include('/Users/Rick/Doc...')
+#6 [internal function]: eventspot_add_mce_popup('')
+#7 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-includes/plugin.php(503): call_user_func_array('eventspot_add_m...', Array)
+#8 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/admin-footer.php(67): do_action('admin_footer', '')
+#9 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/Rick/Doc...')
+#10 {main}
+
+Constant Contact Exception -- November 19, 2015, 10:53:28am
+Constant Contact HTTP Request Exception: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Error>
+    <ErrorCode>403</ErrorCode>
+    <ErrorMessages>SiteOwner johnmanlove does not have access to EventSpot product</ErrorMessages>
+</Error>
+
+Stack Trace: #0 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/Collections.php(620): CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/ConstantContact.php(524): EventsCollection->getEvents(NULL)
+#2 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/functions.php(42): ConstantContact->getEvents(NULL)
+#3 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/views/embed-form.php(55): constant_contact_old_api_get_all('Events', Object(KWS_V1API), NULL, Array, NULL, true)
+#4 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/inc/functions.php(36): include('/Users/Rick/Doc...')
+#5 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/embed.php(54): kws_ob_include('/Users/Rick/Doc...')
+#6 [internal function]: eventspot_add_mce_popup('')
+#7 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-includes/plugin.php(503): call_user_func_array('eventspot_add_m...', Array)
+#8 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/admin-footer.php(67): do_action('admin_footer', '')
+#9 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/Rick/Doc...')
+#10 {main}
+
+Constant Contact Exception -- November 19, 2015, 10:53:49am
+Constant Contact HTTP Request Exception: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Error>
+    <ErrorCode>403</ErrorCode>
+    <ErrorMessages>SiteOwner johnmanlove does not have access to EventSpot product</ErrorMessages>
+</Error>
+
+Stack Trace: #0 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/Collections.php(620): CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/ConstantContact.php(524): EventsCollection->getEvents(NULL)
+#2 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/functions.php(42): ConstantContact->getEvents(NULL)
+#3 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/views/embed-form.php(55): constant_contact_old_api_get_all('Events', Object(KWS_V1API), NULL, Array, NULL, true)
+#4 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/inc/functions.php(36): include('/Users/Rick/Doc...')
+#5 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/embed.php(54): kws_ob_include('/Users/Rick/Doc...')
+#6 [internal function]: eventspot_add_mce_popup('')
+#7 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-includes/plugin.php(503): call_user_func_array('eventspot_add_m...', Array)
+#8 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/admin-footer.php(67): do_action('admin_footer', '')
+#9 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/Rick/Doc...')
+#10 {main}
+
+Constant Contact Exception -- November 19, 2015, 11:12:39am
+Constant Contact HTTP Request Exception: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Error>
+    <ErrorCode>403</ErrorCode>
+    <ErrorMessages>SiteOwner johnmanlove does not have access to EventSpot product</ErrorMessages>
+</Error>
+
+Stack Trace: #0 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/Collections.php(620): CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/ConstantContact.php(524): EventsCollection->getEvents(NULL)
+#2 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/functions.php(42): ConstantContact->getEvents(NULL)
+#3 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/views/embed-form.php(55): constant_contact_old_api_get_all('Events', Object(KWS_V1API), NULL, Array, NULL, true)
+#4 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/inc/functions.php(36): include('/Users/Rick/Doc...')
+#5 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/embed.php(54): kws_ob_include('/Users/Rick/Doc...')
+#6 [internal function]: eventspot_add_mce_popup('')
+#7 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-includes/plugin.php(503): call_user_func_array('eventspot_add_m...', Array)
+#8 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/admin-footer.php(67): do_action('admin_footer', '')
+#9 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/Rick/Doc...')
+#10 {main}
+
+Constant Contact Exception -- November 19, 2015, 11:53:35am
+Constant Contact HTTP Request Exception: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Error>
+    <ErrorCode>403</ErrorCode>
+    <ErrorMessages>SiteOwner johnmanlove does not have access to EventSpot product</ErrorMessages>
+</Error>
+
+Stack Trace: #0 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/Collections.php(620): CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/ConstantContact.php(524): EventsCollection->getEvents(NULL)
+#2 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/functions.php(42): ConstantContact->getEvents(NULL)
+#3 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/views/embed-form.php(55): constant_contact_old_api_get_all('Events', Object(KWS_V1API), NULL, Array, NULL, true)
+#4 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/inc/functions.php(36): include('/Users/Rick/Doc...')
+#5 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/embed.php(54): kws_ob_include('/Users/Rick/Doc...')
+#6 [internal function]: eventspot_add_mce_popup('')
+#7 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-includes/plugin.php(503): call_user_func_array('eventspot_add_m...', Array)
+#8 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/admin-footer.php(67): do_action('admin_footer', '')
+#9 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/Rick/Doc...')
+#10 {main}
+
+Constant Contact Exception -- November 19, 2015, 12:01:40pm
+Constant Contact HTTP Request Exception: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Error>
+    <ErrorCode>403</ErrorCode>
+    <ErrorMessages>SiteOwner johnmanlove does not have access to EventSpot product</ErrorMessages>
+</Error>
+
+Stack Trace: #0 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/Collections.php(620): CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/ConstantContact.php(524): EventsCollection->getEvents(NULL)
+#2 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/functions.php(42): ConstantContact->getEvents(NULL)
+#3 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/views/embed-form.php(55): constant_contact_old_api_get_all('Events', Object(KWS_V1API), NULL, Array, NULL, true)
+#4 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/inc/functions.php(36): include('/Users/Rick/Doc...')
+#5 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/embed.php(54): kws_ob_include('/Users/Rick/Doc...')
+#6 [internal function]: eventspot_add_mce_popup('')
+#7 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-includes/plugin.php(503): call_user_func_array('eventspot_add_m...', Array)
+#8 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/admin-footer.php(67): do_action('admin_footer', '')
+#9 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/Rick/Doc...')
+#10 {main}
+
+Constant Contact Exception -- November 19, 2015, 1:17:20pm
+Constant Contact HTTP Request Exception: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Error>
+    <ErrorCode>403</ErrorCode>
+    <ErrorMessages>SiteOwner johnmanlove does not have access to EventSpot product</ErrorMessages>
+</Error>
+
+Stack Trace: #0 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/Collections.php(620): CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/ctct_php_library/ConstantContact.php(524): EventsCollection->getEvents(NULL)
+#2 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/functions.php(42): ConstantContact->getEvents(NULL)
+#3 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/views/embed-form.php(55): constant_contact_old_api_get_all('Events', Object(KWS_V1API), NULL, Array, NULL, true)
+#4 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/inc/functions.php(36): include('/Users/Rick/Doc...')
+#5 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-content/plugins/constant-contact-api/lib/eventspot/embed.php(54): kws_ob_include('/Users/Rick/Doc...')
+#6 [internal function]: eventspot_add_mce_popup('')
+#7 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-includes/plugin.php(503): call_user_func_array('eventspot_add_m...', Array)
+#8 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/admin-footer.php(67): do_action('admin_footer', '')
+#9 /Users/Rick/Documents/__Websites/JMMC_Corp-Site/wp-admin/post.php(327): include('/Users/Rick/Doc...')
+#10 {main}
+

@@ -86,6 +86,10 @@ blockquote {
 	color: $red;
 }
 
+.alignnone {
+	margin: 0;
+}
+
 /* ===================================================================================
 HEADER STYLES
 =================================================================================== */
@@ -149,18 +153,22 @@ HEADER STYLES
 				max-width: 1280px;
 
 				li {
+					margin-right: 10px;
 
 					&:hover {
 						background-color: transparent;
+
 					}
 
 					a {
 						background-color: transparent;
 						border-left: 0 none;
+						border-top: 10px solid transparent;
 						color: black;
 						font-family: $font-stack !important;
 						font-size: 1.25em;
 						font-weight: normal;
+						margin-top: -10px;
 						padding: 0 1.2em;
 						transition: all .3s;
 						text-shadow: none;
@@ -168,7 +176,9 @@ HEADER STYLES
 						&:hover {
 							background-color: $red;
 							background-image: none !important;
+							border-top-color: $red;
 							color: white;
+							line-height: 25px;
 						}
 					}
 
@@ -176,8 +186,28 @@ HEADER STYLES
 
 						a {
 							background-color: $red;
+							border-top-color: $red;
 							color: white;
+							line-height: 25px;
 						}
+
+						&::before {
+							border-bottom: 10px solid $brown;
+						    border-left: 10px solid transparent;
+						    content: "";
+						    position: absolute;
+						    left: -10px;
+						    top: -10px;
+						}
+
+						/*&::after {
+							border-bottom: 10px solid $blue;
+						    border-right: 10px solid transparent;
+						    content: "";
+						    position: absolute;
+						    right: -10px;
+						    top: -10px;
+						}*/
 					}
 				}
 			}
@@ -235,10 +265,6 @@ body {
 
 						.su-column-inner {
 							padding: 25px;
-
-							.alignnone {
-								margin: 0;
-							}
 
 							h2 {
 								color: white;
@@ -706,6 +732,26 @@ body {
 						padding: 80px 50px 0;
 					}
 				}
+
+				.cube-portfolio { 
+					#cbpw-filters3 {
+						
+						.cbp-filter-item {
+							font-family: $font-stack !important;
+							font-size: 2em !important;
+
+							&:nth-child(2) {
+								color: $red !important;
+							}
+							&:nth-child(3) {
+								color: $blue !important;
+							}
+							&:nth-child(4) {
+								color: $brown !important;
+							}
+						}
+					}
+				}	
 			}
 		}
 
@@ -757,6 +803,103 @@ body {
 
 				&:first-of-type {
 					margin-top: 150px;
+				}
+			}
+		}
+
+		.video-gallery {
+
+			h2 {
+				color: $brown;
+				text-align: center;
+			}
+
+			.rs-fullvideo-cover {
+				display: none;
+			}
+		}
+
+		.spheres-row {
+			background-color: $red;
+			margin-top: 40px;
+			padding: 50px 0;
+		}
+
+		.cbp-wrapper {
+
+			.cbp-l-grid-blog-title {
+				font-family: $font-stack !important;
+				font-size: 1.7em !important;
+			}
+
+			.talks {
+
+				.cbp-l-grid-blog-title {
+					color: $red !important;
+				}
+			}
+			
+			.thoughts {
+				
+				.cbp-l-grid-blog-title {
+					color: $blue !important;
+				}
+			}
+
+			.news {
+
+				.cbp-l-grid-blog-title {
+					color: $brown !important;
+				}
+			}
+		}
+
+		.contact {
+
+			.su-column {
+				padding: 40px;
+
+				&.contact-form {
+					input[type="text"] {
+						background-image: none !important;
+						border: 1px solid black;
+						border-radius: 0;
+						box-shadow: none;
+						transition: all .2s;
+						width: 100%;
+
+						&:focus {
+							box-shadow: 0 0 3px $blue;
+							border-color: $blue;
+						}
+					}
+
+					.cc_Go {
+						text-align: right;
+						
+						input[type="submit"] {
+							background-color: transparent;
+							background-image: none;
+							border: 1px solid $red;
+							-webkit-box-shadow: 7px 7px 0 0 #f1f1f1;
+									box-shadow: 7px 7px 0 0 #f1f1f1;
+							border-radius: 0;
+							color: $red;
+							font-family: $font-stack !important;
+							font-size: 1.8em;
+							font-weight: normal;
+							padding: 15px 35px;
+							transition: all .4s;
+							text-shadow: none;
+
+							&:hover {
+								background-color: $red;
+								-webkit-box-shadow: -4px -4px 0 0 #ccc;
+										box-shadow: -4px -4px 0 0 #ccc;
+								color: white;
+							}
+						}
+					}
 				}
 			}
 		}
