@@ -43,7 +43,10 @@ blockquote {
   border-left: 0 none; }
   blockquote p {
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
-    font-style: normal; }
+    font-style: normal;
+    margin-bottom: 0; }
+  blockquote + p {
+    margin-bottom: 2.5em; }
 
 .su-column {
   margin-left: 0 !important; }
@@ -178,19 +181,27 @@ body #wrapper {
         background-color: #E64D61;
         min-height: 690px; }
         body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner {
-          padding: 25px; }
+          padding: 40px 25px 25px; }
           body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner h2 {
             color: white;
-            font-size: 20px;
+            font-size: 1.3em;
             line-height: 1.2em;
             text-transform: uppercase; }
+          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner h3 {
+            font-size: 1.8em;
+            margin: .5em 0; }
+          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner h5 {
+            margin: .5em 0;
+            padding-left: 1.8em; }
           body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner p, body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner li {
-            color: white; }
+            color: white;
+            font-size: .95em; }
+          body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner p {
+            line-height: 1.2em; }
           body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons {
             margin: 0;
             padding: 0; }
             body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li {
-              color: #000;
               font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
               font-size: 1.6em;
               display: inline-block;
@@ -317,14 +328,14 @@ body #wrapper {
       body #wrapper #content-full .post-entry .social .su-column {
         background-size: cover;
         height: 316px; }
-        body #wrapper #content-full .post-entry .social .su-column span {
+        body #wrapper #content-full .post-entry .social .su-column div {
           display: block; }
-          body #wrapper #content-full .post-entry .social .su-column span img {
+          body #wrapper #content-full .post-entry .social .su-column div img {
             height: 50px; }
-          body #wrapper #content-full .post-entry .social .su-column span h2 {
+          body #wrapper #content-full .post-entry .social .su-column div h2 {
             color: white;
             font-size: 2.7em; }
-          body #wrapper #content-full .post-entry .social .su-column span a {
+          body #wrapper #content-full .post-entry .social .su-column div a {
             background-color: transparent;
             border: 1px solid white;
             color: white;
@@ -332,7 +343,7 @@ body #wrapper {
             font-size: 1.4em;
             padding: 5px 20px;
             transition: all .2s; }
-            body #wrapper #content-full .post-entry .social .su-column span a:hover {
+            body #wrapper #content-full .post-entry .social .su-column div a:hover {
               background-color: #f5f5f5;
               border-color: #f5f5f5;
               color: #333; }
@@ -340,7 +351,7 @@ body #wrapper {
         background: transparent url("/JMMC_Corp-Site/wp-content/uploads/2015/11/bg_youtube.jpg") 0 0 no-repeat;
         background-size: cover;
         min-height: 316px; }
-        body #wrapper #content-full .post-entry .social .youtube span {
+        body #wrapper #content-full .post-entry .social .youtube div div {
           float: right;
           padding-top: 40px;
           width: 45%; }
@@ -348,7 +359,7 @@ body #wrapper {
         position: relative; }
         body #wrapper #content-full .post-entry .social .instagram #sb_instagram {
           overflow: hidden; }
-        body #wrapper #content-full .post-entry .social .instagram span {
+        body #wrapper #content-full .post-entry .social .instagram div .insta-div {
           height: 100%;
           padding-left: 40px;
           padding-top: 40px;
@@ -357,7 +368,7 @@ body #wrapper {
           width: 100%; }
       body #wrapper #content-full .post-entry .social .facebook {
         background-color: #3b5998; }
-        body #wrapper #content-full .post-entry .social .facebook span {
+        body #wrapper #content-full .post-entry .social .facebook div div {
           display: block;
           height: 100%;
           padding-left: 40px;
@@ -386,32 +397,52 @@ body #wrapper {
     body #wrapper #content-full .post-entry .featured {
       background-color: #BFB6AF; }
       body #wrapper #content-full .post-entry .featured.john .su-column:first-child, body #wrapper #content-full .post-entry .featured.gina .su-column:last-child {
-        padding: 80px; }
+        padding: 60px 80px; }
       body #wrapper #content-full .post-entry .featured .su-column h2, body #wrapper #content-full .post-entry .featured .su-column p, body #wrapper #content-full .post-entry .featured .su-column a {
         color: white; }
     body #wrapper #content-full .post-entry .our-team {
-      margin-bottom: 40px;
-      padding: 0px 80px; }
+      padding: 0px; }
+      body #wrapper #content-full .post-entry .our-team .su-column-size-2-3 {
+        padding: 160px 160px 60px 80px; }
+      body #wrapper #content-full .post-entry .our-team .eddy {
+        background-color: #BFB6AF; }
+        body #wrapper #content-full .post-entry .our-team .eddy p {
+          margin-bottom: 0; }
+        body #wrapper #content-full .post-entry .our-team .eddy .su-column-inner > div {
+          min-height: 400px;
+          padding: 100px 50px 0; }
+          body #wrapper #content-full .post-entry .our-team .eddy .su-column-inner > div h3, body #wrapper #content-full .post-entry .our-team .eddy .su-column-inner > div h4, body #wrapper #content-full .post-entry .our-team .eddy .su-column-inner > div p, body #wrapper #content-full .post-entry .our-team .eddy .su-column-inner > div a {
+            color: white; }
+          body #wrapper #content-full .post-entry .our-team .eddy .su-column-inner > div h3 {
+            margin-top: 0; }
+          body #wrapper #content-full .post-entry .our-team .eddy .su-column-inner > div p {
+            margin-bottom: 1.2em; }
     body #wrapper #content-full .post-entry .team {
-      background-color: #59C6E5;
-      margin-bottom: 60px; }
+      background-color: #59C6E5; }
+      body #wrapper #content-full .post-entry .team .su-column .su-column-inner p {
+        margin-bottom: 0; }
       body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div {
         min-height: 400px;
-        padding: 60px 30px 30px; }
-        body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div h3, body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div p, body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div a {
+        padding: 100px 50px 0; }
+        body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div h3, body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div h4, body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div p, body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div a {
           color: white; }
         body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div h3 {
+          margin-top: 0;
           margin-bottom: .25em; }
+        body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div h4 {
+          line-height: 1.2em; }
+        body #wrapper #content-full .post-entry .team .su-column .su-column-inner > div p {
+          margin-bottom: 1.2em; }
       body #wrapper #content-full .post-entry .team .leah {
         background-color: #BFB6AF; }
-      body #wrapper #content-full .post-entry .team .eddy {
+      body #wrapper #content-full .post-entry .team .madison {
         background-color: #E64D61; }
       body #wrapper #content-full .post-entry .team .vicente {
         background-color: #E64D61; }
       body #wrapper #content-full .post-entry .team .rick {
         background-color: #BFB6AF; }
     body #wrapper #content-full .post-entry .awards {
-      margin-bottom: 40px; }
+      margin: 40px 0; }
       body #wrapper #content-full .post-entry .awards .su-column {
         padding: 0px 30px; }
         body #wrapper #content-full .post-entry .awards .su-column h2 {
@@ -426,7 +457,7 @@ body #wrapper {
     body #wrapper #content-full .post-entry .featured-case .su-column:first-child {
       padding: 80px 80px 0; }
     body #wrapper #content-full .post-entry .secondary .float-img {
-      margin-top: -300px; }
+      margin-top: -40px; }
     body #wrapper #content-full .post-entry .secondary .su-column:last-child {
       padding: 80px 50px 0; }
     body #wrapper #content-full .post-entry .cs-content {
@@ -446,6 +477,8 @@ body #wrapper {
     margin-bottom: 40px; }
     body #wrapper .capabilities .su-column {
       padding: 40px; }
+      body #wrapper .capabilities .su-column h4 {
+        margin: .4em 0; }
       body #wrapper .capabilities .su-column .red {
         list-style: none;
         margin: 0 0 20px;
@@ -485,7 +518,7 @@ body #wrapper {
   body #wrapper .cbp-wrapper .cbp-l-grid-blog-title {
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
     font-size: 1.7em !important; }
-  body #wrapper .cbp-wrapper .talks .cbp-l-grid-blog-title {
+  body #wrapper .cbp-wrapper .culture .cbp-l-grid-blog-title {
     color: #E64D61 !important; }
   body #wrapper .cbp-wrapper .thoughts .cbp-l-grid-blog-title {
     color: #59C6E5 !important; }
@@ -536,7 +569,7 @@ FOOTER STYLES
 =================================================================================== */
 #footer {
   max-width: 100%;
-  padding: 0 0 40px 0; }
+  padding: 0 0 30px 0; }
   #footer #footer-wrapper {
     margin: 0 auto;
     max-width: 1280px; }

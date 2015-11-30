@@ -71,14 +71,20 @@ get_header(); ?>
 
 [su_column size="1/2"]
 <h2>Capabilities</h2>
-Strong brands have strong brand identities. One unmistakable story for customers, employees, stakeholders and shareholders. Told memorably at every touch-point, through consistent design, behaviour and engagement.
-
-We play an active part from the definition of the brand\'s objectives, to the development of a unique visual language, to the translations of the new brand identity to all brand touch points. As a committed brand guardian we ensure that the identity is implemented successfully throughout the company.
+<p>The beauty of our creative marketing process is that it is simple, yet effective. The clarify step allows us to get on the same page with our clients, pinpointing their vision and business goals so we can meet and exceed their expectations. The brand step involves taking that vision and making it a reality for your target market. Once we have identified what makes you and your products or services unique, all of our marketing materials are designed around that core concept, maximizing your appeal to your audience. Lastly, the reach step occurs when we broadcast that vision to the rest of the world, which, in our minds, is “the meaning of influence.”</p>
+<p>Our core competencies are listed below. You’ll find that we have expertise in all of these areas and more. Not only that, but we understand the big picture and can adapt to new trends better than most other advertising agencies in Houston. If you’re interested in partnering with a firm that is passionate about creating influence for you and your business, we could be the perfect fit for you.</p>
 <h3>Clarify      Brand      Reach</h3>
 [/su_column]
 
 [su_column size="1/2"]
 
+<h4>Clarify</h4>
+<p>Consulting, Research, & Marketing Plans</p>
+<h4>Brand</h4>
+<p>Graphic Design, Web Design, Copywriting, Photography, & Television, Radio and Print Production</p>
+
+<h4>Reach</h4>
+<p>Media Planning & Buying (for Broadcast & Cable TV, Radio, Print, Online Advertising), Search Engine Marketing (SEO and Pay-Per-Click), Direct Mail (List & Fulfillment & Variable Data), Social Media, Public Relations, & Events</p>
 <ul class="red">
 	<li>Brand Positioning</li>
 	<li>Brand Stories </li>

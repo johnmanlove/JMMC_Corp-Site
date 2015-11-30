@@ -71,6 +71,11 @@ blockquote {
 	p {
 		font-family: $font-stack !important;
 		font-style: normal;
+		margin-bottom: 0;
+	}
+
+	&+ p {
+		margin-bottom: 2.5em;
 	}
 }
 
@@ -264,17 +269,32 @@ body {
 						min-height: $hero-banner-height;
 
 						.su-column-inner {
-							padding: 25px;
+							padding: 40px 25px 25px;
 
 							h2 {
 								color: white;
-								font-size: 20px;
+								font-size: 1.3em;
 								line-height: 1.2em;
 								text-transform: uppercase;
 							}
 
+							h3 {
+								font-size: 1.8em;
+								margin: .5em 0;
+							}
+
+							h5 {
+								margin: .5em 0;
+								padding-left: 1.8em;
+							}
+
 							p, li {
 								color: white;
+								font-size: .95em;
+							}
+
+							p {
+								line-height: 1.2em;
 							}
 
 							.icons {
@@ -282,7 +302,6 @@ body {
 								padding: 0;
 
 								li {
-									color: #000;
 									font-family: $font-stack !important;
 									font-size: 1.6em;
 									display: inline-block;
@@ -506,7 +525,7 @@ body {
 						background-size: cover;
 						height: 316px;
 
-						span {
+						div {
 							display: block;
 
 							img {
@@ -541,10 +560,13 @@ body {
 						background-size: cover;
 						min-height: 316px;
 
-						span {
-							float: right;
-							padding-top: 40px;
-							width: 45%;
+						div {
+
+							div {
+								float: right;
+								padding-top: 40px;
+								width: 45%;
+							}
 						}
 					}
 
@@ -555,25 +577,31 @@ body {
 							overflow: hidden;
 						}
 
-						span {
-							height: 100%;
-							padding-left: 40px;
-							padding-top: 40px;
-							position: absolute;
-							top: 0;
-							width: 100%;
+						div {
+
+							.insta-div {
+								height: 100%;
+								padding-left: 40px;
+								padding-top: 40px;
+								position: absolute;
+								top: 0;
+								width: 100%;
+							}
 						}
 					}
 
 					.facebook {
 						background-color: #3b5998;
 
-						span {
-							display: block;
-							height: 100%;
-							padding-left: 40px;
-							padding-top: 40px;
-							width: 100%;
+						div {
+
+							div {
+								display: block;
+								height: 100%;
+								padding-left: 40px;
+								padding-top: 40px;
+								width: 100%;
+							}
 						}
 					}
 				}
@@ -622,7 +650,7 @@ body {
 
 					&.john .su-column:first-child,
 					&.gina .su-column:last-child {
-						padding: 80px;
+						padding: 60px 80px;
 					}
 
 					.su-column {
@@ -634,27 +662,71 @@ body {
 				}
 
 				.our-team {
-					margin-bottom: 40px;
-					padding: 0px 80px;
-				}
+					padding: 0px;
 
-				.team {
-					background-color: $blue;
-					margin-bottom: 60px;
+					.su-column-size-2-3 {
+						padding: 160px 160px 60px 80px;
+					}
 
-					.su-column {
+					.eddy {
+						background-color: $brown;
+
+						p {
+							margin-bottom: 0;
+						}
 
 						.su-column-inner {
+
 							&> div {
 								min-height: 400px;
-								padding: 60px 30px 30px;
+								padding: 100px 50px 0;
 
-								h3, p, a {
+								h3, h4, p, a {
 									color: white;
 								}
 
 								h3 {
+									margin-top: 0;
+								}
+
+								p {
+									margin-bottom: 1.2em;
+								}
+							}
+						}
+					}
+				}
+
+				.team {
+					background-color: $blue;
+
+					.su-column {
+
+						.su-column-inner {
+							
+							p {
+								margin-bottom: 0;
+							}
+
+							&> div {
+								min-height: 400px;
+								padding: 100px 50px 0;
+
+								h3, h4, p, a {
+									color: white;
+								}
+
+								h3 {
+									margin-top: 0;
 									margin-bottom: .25em;
+								}
+
+								h4 {
+									line-height: 1.2em;
+								}
+
+								p {
+									margin-bottom: 1.2em;
 								}
 							} 
 						}
@@ -664,7 +736,7 @@ body {
 						background-color: $brown;
 					}
 
-					.eddy {
+					.madison {
 						background-color: $red;
 					}
 
@@ -679,7 +751,7 @@ body {
 
 				.awards {
 
-					margin-bottom: 40px;
+					margin: 40px 0;
 
 					.su-column {
 						padding: 0px 30px;
@@ -714,7 +786,7 @@ body {
 				.secondary {
 
 					.float-img {
-						margin-top: -300px;
+						margin-top: -40px;
 					}
 
 					.su-column {
@@ -760,6 +832,10 @@ body {
 
 			.su-column {
 				padding: 40px;
+
+				h4 {
+					margin: .4em 0;
+				}
 
 				.red {
 					list-style: none;
@@ -832,7 +908,7 @@ body {
 				font-size: 1.7em !important;
 			}
 
-			.talks {
+			.culture {
 
 				.cbp-l-grid-blog-title {
 					color: $red !important;
@@ -932,7 +1008,7 @@ FOOTER STYLES
 
 #footer {
 	max-width: 100%;
-	padding: 0 0 40px 0;
+	padding: 0 0 30px 0;
 
 	#footer-wrapper {
 		margin: 0 auto;

@@ -43,7 +43,6 @@ $responsive_options = responsive_get_options();
 			<div class="su-row footer">
 				<div class="su-column su-column-size-1-2 contact">
 					<h2>Contact Us</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cupiditate praesentium consectetur.</p>
 					<p class="contact-info">
 						<img src="/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_phone.png" alt=""> 281.487.6767<br />
 						<img src="/JMMC_Corp-Site/wp-content/uploads/2015/11/icon_map.png" alt=""> 5125 Preston ave. Houston, TX 77505<br />
