@@ -151,8 +151,9 @@ HEADER STYLES
 			width: 100%;
 
 			.menu {
-				background-color: transparent;
-				background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/copy-jmmc_logo.png") right 50% no-repeat;
+				background-color: #fafafa;
+				//background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/copy-jmmc_logo.png") right 50% no-repeat;
+				background-image: none;
 				background-size: 275px; 
 				margin: 0 auto;
 				max-width: 1280px;
@@ -294,11 +295,11 @@ body {
 							}
 
 							p {
-								line-height: 1.2em;
+								line-height: 1.4em;
 							}
 
 							.icons {
-								margin: 0;
+								margin: 0 0 20px;
 								padding: 0;
 
 								li {
@@ -310,7 +311,8 @@ body {
 									width: 32%;
 
 									img {
-										margin-bottom: 10px;
+										max-height: 40px;
+										max-width: 40px;	
 									}
 								}
 							}
@@ -534,7 +536,8 @@ body {
 
 							h2 {
 								color: white;
-								font-size: 2.7em;
+								font-size: 2em;
+								margin-bottom: 2.75em;
 							}
 
 							a {
@@ -741,7 +744,8 @@ body {
 					}
 
 					.vicente {
-						background-color: $red;
+						background-color: white;
+						min-height: 817px;
 					}
 
 					.rick {

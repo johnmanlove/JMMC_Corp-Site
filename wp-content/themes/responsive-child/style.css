@@ -99,8 +99,8 @@ HEADER STYLES
       position: fixed;
       width: 100%; }
       #container #header .main-nav .menu {
-        background-color: transparent;
-        background: url("/JMMC_Corp-Site/wp-content/uploads/2015/11/copy-jmmc_logo.png") right 50% no-repeat;
+        background-color: #fafafa;
+        background-image: none;
         background-size: 275px;
         margin: 0 auto;
         max-width: 1280px; }
@@ -197,9 +197,9 @@ body #wrapper {
             color: white;
             font-size: .95em; }
           body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner p {
-            line-height: 1.2em; }
+            line-height: 1.4em; }
           body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons {
-            margin: 0;
+            margin: 0 0 20px;
             padding: 0; }
             body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li {
               font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
@@ -209,7 +209,8 @@ body #wrapper {
               text-align: center;
               width: 32%; }
               body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner .icons li img {
-                margin-bottom: 10px; }
+                max-height: 40px;
+                max-width: 40px; }
           body #wrapper #content-full .post-entry .hero-banner .text .su-column-inner a {
             color: #000;
             display: block;
@@ -334,7 +335,8 @@ body #wrapper {
             height: 50px; }
           body #wrapper #content-full .post-entry .social .su-column div h2 {
             color: white;
-            font-size: 2.7em; }
+            font-size: 2em;
+            margin-bottom: 2.75em; }
           body #wrapper #content-full .post-entry .social .su-column div a {
             background-color: transparent;
             border: 1px solid white;
@@ -438,7 +440,8 @@ body #wrapper {
       body #wrapper #content-full .post-entry .team .madison {
         background-color: #E64D61; }
       body #wrapper #content-full .post-entry .team .vicente {
-        background-color: #E64D61; }
+        background-color: white;
+        min-height: 817px; }
       body #wrapper #content-full .post-entry .team .rick {
         background-color: #BFB6AF; }
     body #wrapper #content-full .post-entry .awards {
