@@ -160,7 +160,7 @@ class Naked_Social_Share_Buttons {
 		/*
 		 * Fetch the share numbers for Twitter if it's enabled.
 		 */
-		if ( array_key_exists( 'twitter', $this->settings['social_sites']['enabled'] ) ) {
+		/*if ( array_key_exists( 'twitter', $this->settings['social_sites']['enabled'] ) ) {
 			$twitter_url      = 'http://urls.api.twitter.com/1/urls/count.json?url=' . $this->url;
 			$twitter_response = wp_remote_get( esc_url_raw( $twitter_url ) );
 			// Make sure the response came back okay.
@@ -173,6 +173,10 @@ class Naked_Social_Share_Buttons {
 				}
 			}
 		} else {
+			$shares['twitter'] = 0;
+		}*/
+
+		if ( ! array_key_exists( 'twitter', $shares ) ) {
 			$shares['twitter'] = 0;
 		}
 
@@ -386,7 +390,7 @@ class Naked_Social_Share_Buttons {
 							<li class="nss-twitter">
 								<a href="http://www.twitter.com/intent/tweet?url=<?php echo urlencode( get_permalink( $this->post ) ) ?><?php echo ( ! empty( $twitter_handle ) ) ? '&via=' . $twitter_handle : ''; ?>&text=<?php echo apply_filters( 'naked_social_share_twitter_text', $this->get_title(), $this->post ); ?>" target="_blank"><i class="fa fa-twitter"></i>
 									<span class="nss-site-name"><?php _e( 'Twitter', 'naked-social-share' ); ?></span>
-									<?php if ( $this->settings['disable_counters'] != 1 ) : ?>
+									<?php if ( $this->settings['disable_counters'] != 1 && $this->share_numbers['twitter'] != 0 ) : ?>
 										<span class="nss-site-count"><?php echo array_key_exists( 'twitter', $this->share_numbers ) ? $this->share_numbers['twitter'] : 0; ?></span>
 									<?php endif; ?>
 								</a>

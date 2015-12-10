@@ -854,6 +854,7 @@ body {
 		}
 
 		.lets-talk {
+			margin-top: 30px;
 
 			.spheres {
 				margin-left: -40px !important;
@@ -861,6 +862,7 @@ body {
 
 			h3 {
 				font-size: 3em;
+				line-height: 1.5em;
 
 				a {
 					background-color: transparent;
@@ -882,7 +884,7 @@ body {
 				}
 
 				&:first-of-type {
-					margin-top: 150px;
+					margin-top: 400px;
 				}
 			}
 		}
@@ -1040,10 +1042,77 @@ FOOTER STYLES
 		}
 
 		.contact {
-			padding: 30px;
+			padding: 20px 30px 0;
+
+			h2 {
+				font-size: 2.3em;
+				margin-bottom: .2em;
+				margin-top: 0;
+			}
+
+			input[type="text"],
+			input[type="email"] {
+				background-image: none !important;
+			    border: 1px solid #aaa;
+			    border-radius: 0;
+			    box-shadow: none;
+			    transition: all .2s;
+				width: 49%;
+
+				&:focus {
+					border-color: $blue;
+					box-shadow: 0 0 3px $blue;
+				}
+			}
+
+			input[type="text"] {
+				margin-right: 1%;
+			}
+
+			textarea {
+				background-image: none !important;
+			    border: 1px solid #aaa;
+			    border-radius: 0;
+			    box-shadow: none;
+				height: 75px;
+			    transition: all .2s;
+				width: 100%;
+
+				&:focus {
+					border-color: $blue;
+					box-shadow: 0 0 3px $blue;
+				}
+			}
+
+			input[type="submit"] {
+				background-color: transparent;
+				background-image: none;
+				border: 1px solid $red;
+				-webkit-box-shadow: 7px 7px 0 0 #f1f1f1;
+						box-shadow: 7px 7px 0 0 #f1f1f1;
+				border-radius: 0;
+				color: $red;
+				font-family: $font-stack !important;
+				font-size: 1.8em;
+				font-weight: normal;
+				padding: 15px 35px;
+				transition: all .4s;
+				text-shadow: none;
+				width: 100%;
+
+				&:hover {
+					background-color: $red;
+					-webkit-box-shadow: -4px -4px 0 0 #ccc;
+							box-shadow: -4px -4px 0 0 #ccc;
+					color: white;
+				}
+			}
 
 			.locations {
 
+				p {
+					margin-bottom: 0;
+				}
 				span {
 					color: $red;
 				}

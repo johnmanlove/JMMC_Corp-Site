@@ -488,27 +488,30 @@ body #wrapper {
         padding: 0; }
         body #wrapper .capabilities .su-column .red li {
           color: #E64D61; }
-  body #wrapper .lets-talk .spheres {
-    margin-left: -40px !important; }
-  body #wrapper .lets-talk h3 {
-    font-size: 3em; }
-    body #wrapper .lets-talk h3 a {
-      background-color: transparent;
-      border: 1px solid #E64D61;
-      -webkit-box-shadow: 7px 7px 0 0 #f1f1f1;
-      box-shadow: 7px 7px 0 0 #f1f1f1;
-      color: #E64D61;
-      font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
-      font-weight: normal;
-      padding: 5px 25px;
-      transition: all .4s; }
-      body #wrapper .lets-talk h3 a:hover {
-        background-color: #E64D61;
-        -webkit-box-shadow: -4px -4px 0 0 #ccc;
-        box-shadow: -4px -4px 0 0 #ccc;
-        color: white; }
-    body #wrapper .lets-talk h3:first-of-type {
-      margin-top: 150px; }
+  body #wrapper .lets-talk {
+    margin-top: 30px; }
+    body #wrapper .lets-talk .spheres {
+      margin-left: -40px !important; }
+    body #wrapper .lets-talk h3 {
+      font-size: 3em;
+      line-height: 1.5em; }
+      body #wrapper .lets-talk h3 a {
+        background-color: transparent;
+        border: 1px solid #E64D61;
+        -webkit-box-shadow: 7px 7px 0 0 #f1f1f1;
+        box-shadow: 7px 7px 0 0 #f1f1f1;
+        color: #E64D61;
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+        font-weight: normal;
+        padding: 5px 25px;
+        transition: all .4s; }
+        body #wrapper .lets-talk h3 a:hover {
+          background-color: #E64D61;
+          -webkit-box-shadow: -4px -4px 0 0 #ccc;
+          box-shadow: -4px -4px 0 0 #ccc;
+          color: white; }
+      body #wrapper .lets-talk h3:first-of-type {
+        margin-top: 400px; }
   body #wrapper .video-gallery h2 {
     color: #BFB6AF;
     text-align: center; }
@@ -593,7 +596,58 @@ FOOTER STYLES
       filter: gray;
       /* IE 6-9 */ }
     #footer #footer-wrapper .contact {
-      padding: 30px; }
+      padding: 20px 30px 0; }
+      #footer #footer-wrapper .contact h2 {
+        font-size: 2.3em;
+        margin-bottom: .2em;
+        margin-top: 0; }
+      #footer #footer-wrapper .contact input[type="text"],
+      #footer #footer-wrapper .contact input[type="email"] {
+        background-image: none !important;
+        border: 1px solid #aaa;
+        border-radius: 0;
+        box-shadow: none;
+        transition: all .2s;
+        width: 49%; }
+        #footer #footer-wrapper .contact input[type="text"]:focus,
+        #footer #footer-wrapper .contact input[type="email"]:focus {
+          border-color: #59C6E5;
+          box-shadow: 0 0 3px #59C6E5; }
+      #footer #footer-wrapper .contact input[type="text"] {
+        margin-right: 1%; }
+      #footer #footer-wrapper .contact textarea {
+        background-image: none !important;
+        border: 1px solid #aaa;
+        border-radius: 0;
+        box-shadow: none;
+        height: 75px;
+        transition: all .2s;
+        width: 100%; }
+        #footer #footer-wrapper .contact textarea:focus {
+          border-color: #59C6E5;
+          box-shadow: 0 0 3px #59C6E5; }
+      #footer #footer-wrapper .contact input[type="submit"] {
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid #E64D61;
+        -webkit-box-shadow: 7px 7px 0 0 #f1f1f1;
+        box-shadow: 7px 7px 0 0 #f1f1f1;
+        border-radius: 0;
+        color: #E64D61;
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+        font-size: 1.8em;
+        font-weight: normal;
+        padding: 15px 35px;
+        transition: all .4s;
+        text-shadow: none;
+        width: 100%; }
+        #footer #footer-wrapper .contact input[type="submit"]:hover {
+          background-color: #E64D61;
+          -webkit-box-shadow: -4px -4px 0 0 #ccc;
+          box-shadow: -4px -4px 0 0 #ccc;
+          color: white; }
+      #footer #footer-wrapper .contact .locations p {
+        margin-bottom: 0; }
       #footer #footer-wrapper .contact .locations span {
         color: #E64D61; }
 
