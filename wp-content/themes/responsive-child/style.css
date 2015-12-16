@@ -177,6 +177,9 @@ body #wrapper {
     body #wrapper #content-full .post-entry .hero-banner {
       margin-bottom: 0 !important;
       max-height: 690px; }
+      body #wrapper #content-full .post-entry .hero-banner .video .tp-caption {
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+        font-weight: normal; }
       body #wrapper #content-full .post-entry .hero-banner .image {
         background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat;
         min-height: 690px; }
@@ -635,6 +638,12 @@ body .su-row {
   margin-bottom: 0; }
   body .su-row .su-column .alignnone {
     margin: 0; }
+body #content-blog a {
+  color: #E64D61;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !important;
+  transition: all .3s; }
+  body #content-blog a:hover {
+    color: #C4BFBA; }
 
 /* ===================================================================================
 FOOTER STYLES

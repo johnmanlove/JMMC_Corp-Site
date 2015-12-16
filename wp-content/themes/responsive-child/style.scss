@@ -261,6 +261,14 @@ body {
 					margin-bottom: 0 !important;
 					max-height: $hero-banner-height;
 
+					.video {
+
+						.tp-caption {
+							font-family: $font-stack !important;
+							font-weight: normal;
+						}
+					}
+
 					.image {
 						background: url("/JMMC_Corp-Site/wp-content/uploads/2015/09/bg_hero.jpg") 0 0 no-repeat;
 						min-height: $hero-banner-height;
@@ -1089,6 +1097,19 @@ body {
 
 			.alignnone {
 				margin: 0;
+			}
+		}
+	}
+
+	#content-blog {
+
+		a {
+			color: $red;
+			font-family: $font-stack !important;
+			transition: all .3s;
+
+			&:hover {
+				color: $brown;
 			}
 		}
 	}
